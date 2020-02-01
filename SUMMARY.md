@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Before you startx](README.md)
+* [Before you start](README.md)
 
 ## Informations
 
