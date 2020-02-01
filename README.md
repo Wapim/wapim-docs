@@ -1,1 +1,2 @@
-# wapim-docs
+# Initial page
+
