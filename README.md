@@ -1,5 +1,75 @@
 # Before you start
 
+> **Attention: To make the bot fully functional, please, always keep your phone online. Your phone should not be used for the WhatsApp Web at the same time.**
+
+\*\*\*\*
+
+{% tabs %}
+{% tab title="JavaScript" %}
+```javascript
+import moment from "moment";
+
+const calculateExpireDate = (period, expireDate = null) => {
+	let now = moment(new Date())
+		.utc()
+		.format();
+
+	if (expireDate) {
+		expireDate = moment(expireDate)
+			.utc()
+			.format();
+
+		if (now < expireDate) {
+			now = expireDate;
+		}
+	}
+
+	return moment(now)
+		.add(period.toLowerCase() === "yearly" ? 365 : 30, "days")
+		.format();
+};
+
+export { calculateExpireDate as default };
+```
+{% endtab %}
+
+{% tab title="Go" %}
+```go
+package main
+
+import "fmt"
+
+func main() {
+
+    if 7%2 == 0 {
+        fmt.Println("7 is even")
+    } else {
+        fmt.Println("7 is odd")
+    }
+
+    if 8%4 == 0 {
+        fmt.Println("8 is divisible by 4")
+    }
+
+    if num := 9; num < 0 {
+        fmt.Println(num, "is negative")
+    } else if num < 10 {
+        fmt.Println(num, "has 1 digit")
+    } else {
+        fmt.Println(num, "has multiple digits")
+    }
+}
+```
+{% endtab %}
+
+{% tab title="PHP" %}
+```php
+<?php
+echo "Hello FTP";
+```
+{% endtab %}
+{% endtabs %}
+
 {% api-method method="get" host="https://api.cakes.com" path="/v1/cakes/:id" %}
 {% api-method-summary %}
 Get Cakes cc
