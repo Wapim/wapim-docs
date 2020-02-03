@@ -2,7 +2,7 @@
 
 {% tabs %}
 {% tab title="JavaScript" %}
-```text
+```javascript
 import moment from "moment";
 
 const calculateExpireDate = (period, expireDate = null) => {
@@ -30,7 +30,7 @@ export { calculateExpireDate as default };
 {% endtab %}
 
 {% tab title="Go" %}
-```
+```go
 package main
 
 import "fmt"
@@ -59,7 +59,7 @@ func main() {
 {% endtab %}
 
 {% tab title="PHP" %}
-```
+```php
 <?php
 echo "Hello FTP";
 ```
