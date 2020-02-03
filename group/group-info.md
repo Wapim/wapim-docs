@@ -59,7 +59,6 @@ Succesfully getting info of groups.
         ]
     }
 }
- 
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}

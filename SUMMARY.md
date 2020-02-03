@@ -7,7 +7,6 @@
 * [Get Device Info](informations/device-info.md)
 * [Get Contact List](informations/contacts.md)
 * [Get Profile Photos](informations/get-profile-photo.md)
-  * [Test](informations/get-profile-photo/test.md)
 
 ## Messages
 

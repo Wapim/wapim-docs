@@ -31,24 +31,6 @@ Succesfully getting active groups.
   }
 ```
 {% endapi-method-response-example %}
-<!---
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-Please read qr code.
-{% endapi-method-response-example-description %}
-
-```text
-{
-   "status":false,
-   "code":400,
-   "message":"Bad Request",
-   "error":{
-      "Must be logged in"
-   }
-}
-```
-{% endapi-method-response-example %}
--->
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
