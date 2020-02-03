@@ -68,3 +68,19 @@ Missing or wrong params!
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Example Usages
+
+{% tabs %}
+{% tab title="JavaScript" %}
+```text
+
+```
+{% endtab %}
+
+{% tab title="cURL" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
+
