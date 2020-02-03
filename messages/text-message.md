@@ -1,7 +1,3 @@
----
-description: You can send WhatsApp text messages with this endpoint.
----
-
 # Send Text Message
 
 {% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/message/text" %}
