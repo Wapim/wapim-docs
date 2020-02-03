@@ -1,5 +1,31 @@
 # Before you start
 
+```javascript
+import moment from "moment";
+
+const calculateExpireDate = (period, expireDate = null) => {
+	let now = moment(new Date())
+		.utc()
+		.format();
+
+	if (expireDate) {
+		expireDate = moment(expireDate)
+			.utc()
+			.format();
+
+		if (now < expireDate) {
+			now = expireDate;
+		}
+	}
+
+	return moment(now)
+		.add(period.toLowerCase() === "yearly" ? 365 : 30, "days")
+		.format();
+};
+
+export { calculateExpireDate as default };
+```
+
 {% api-method method="get" host="https://api.cakes.com" path="/v1/cakes/:id" %}
 {% api-method-summary %}
 Get Cakes cc
