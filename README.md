@@ -1,6 +1,8 @@
 # Before you start
 
-```javascript
+{% tabs %}
+{% tab title="JavaScript" %}
+```text
 import moment from "moment";
 
 const calculateExpireDate = (period, expireDate = null) => {
@@ -25,6 +27,44 @@ const calculateExpireDate = (period, expireDate = null) => {
 
 export { calculateExpireDate as default };
 ```
+{% endtab %}
+
+{% tab title="Go" %}
+```
+package main
+
+import "fmt"
+
+func main() {
+
+    if 7%2 == 0 {
+        fmt.Println("7 is even")
+    } else {
+        fmt.Println("7 is odd")
+    }
+
+    if 8%4 == 0 {
+        fmt.Println("8 is divisible by 4")
+    }
+
+    if num := 9; num < 0 {
+        fmt.Println(num, "is negative")
+    } else if num < 10 {
+        fmt.Println(num, "has 1 digit")
+    } else {
+        fmt.Println(num, "has multiple digits")
+    }
+}
+```
+{% endtab %}
+
+{% tab title="PHP" %}
+```
+<?php
+echo "Hello FTP";
+```
+{% endtab %}
+{% endtabs %}
 
 {% api-method method="get" host="https://api.cakes.com" path="/v1/cakes/:id" %}
 {% api-method-summary %}
