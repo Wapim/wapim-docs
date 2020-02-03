@@ -11,7 +11,7 @@
 ## Messages
 
 * [Send Text Message](messages/text-message.md)
-* [Photo Message](messages/photo-message.md)
+* [Send Image Message](messages/photo-message.md)
 
 ## Group
 
