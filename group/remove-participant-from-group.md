@@ -1,4 +1,4 @@
-# Remove Participant from WhatsApp Group
+# Remove participant to WhatsApp Group
 
 {% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/group/remove" %}
 {% api-method-summary %}
@@ -15,9 +15,8 @@ This endpoint remove participant from WhatsApp group.
 {% api-method-parameter name="gid" type="string" required=true %}
 Group ID
 {% endapi-method-parameter %}
-
 {% api-method-parameter name="participants" type="string" required=true %}
-Group members to be added numbers, you can seperate commas for multiple numbers. \(For example: 905546450000,905433468576\)
+Group members to be added numbers, you can seperate commas for multiple numbers. (For example: 905546450000,905433468576)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}

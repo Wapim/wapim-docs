@@ -1,4 +1,4 @@
-# Get Profile Photos
+# Get Profile Photo
 
 {% api-method method="get" host="https://api.wapim.io/" path="api/v1/whatsapp/profilephoto" %}
 {% api-method-summary %}
@@ -19,7 +19,7 @@ Authentication token.
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="phone\_number" type="string" required=true %}
-A phone number starting with the country code.
+A phone number starting with the country code.  
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -56,6 +56,7 @@ Requested photo is blocked or no photo for this number.
   }
 ```
 {% endapi-method-response-example %}
+
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
