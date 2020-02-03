@@ -1,6 +1,6 @@
-# Text Message
+# Send Text Message
 
-{% api-method method="get" host="https://api.wapim.io/" path="api/v1/whatsapp/message/text" %}
+{% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/message/text" %}
 {% api-method-summary %}
 Send Text Message
 {% endapi-method-summary %}
@@ -19,8 +19,9 @@ Authentication token.
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="phone\_number" type="string" required=true %}
-A phone number starting with the country code.  
+A phone number starting with the country code.
 {% endapi-method-parameter %}
+
 {% api-method-parameter name="message" type="string" required=true %}
 Content of text message
 {% endapi-method-parameter %}
@@ -37,8 +38,8 @@ Succesfully sended text message.
 {
     "queue_message_id": "905546453273_997B21D0C8B90189041D",
     "message": "We reached successfully"
-}```
-
+}
+```
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
@@ -58,9 +59,8 @@ Missing or wrong params!
     }
 }
 ```
-
 {% endapi-method-response-example %}
-
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
