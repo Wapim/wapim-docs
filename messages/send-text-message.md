@@ -71,7 +71,7 @@ Missing or wrong params!
 ### Example Usages
 
 {% tabs %}
-{% tab title="JavaScript" %}
+{% tab title="Node.JS" %}
 ```coffeescript
 const axios = require('axios');
 
