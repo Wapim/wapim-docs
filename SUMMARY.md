@@ -13,7 +13,7 @@
 * [Send Text Message](messages/send-text-message.md)
 * [Send Image Message](messages/send-image-message.md)
 
-## Group
+## 👥 Group
 
 * [Get Active Groups](group/active-groups.md)
 * [Get Group Information](group/group-info.md)
