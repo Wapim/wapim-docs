@@ -26,9 +26,6 @@ Authentication token.
 A phone number starting with the country code.
 {% endapi-method-parameter %}
 
-
-
-
 {% api-method-parameter name="message" type="string" required=true %}
 Content of text message
 {% endapi-method-parameter %}
@@ -43,7 +40,7 @@ Successfully send text message.
 
 ```text
 {
-    "queue_message_id": "905546453273_997B21D0C8B90189041D",
+    "queue_message_id": "905546453474_997B21D0C8B90189041D",
     "message": "We reached successfully"
 }
 ```
@@ -71,7 +68,7 @@ Missing or wrong params!
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Example Usages
+## Example Usages
 
 {% tabs %}
 {% tab title="JavaScript" %}
