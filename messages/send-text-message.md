@@ -79,7 +79,9 @@ Missing or wrong params!
 
 {% tab title="cURL" %}
 ```bash
-
+curl -X POST https://api.wapim.io/api/v1/whatsapp/message/text/queue  
+	-H "token: 4F4TKBUAMC8LU833TRSRJ7" 
+	-d '{"phone_number": "905546453273", "message" : "Good :)"}'
 ```
 {% endtab %}
 {% endtabs %}
