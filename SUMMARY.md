@@ -8,7 +8,7 @@
 * [Get Contact List](informations/contacts.md)
 * [Get Profile Photos](informations/get-profile-photo.md)
 
-## Messages
+## ✨ Messages
 
 * [Send Text Message](messages/send-text-message.md)
 * [Send Image Message](messages/send-image-message.md)
