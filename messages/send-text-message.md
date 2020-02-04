@@ -71,36 +71,16 @@ Missing or wrong params!
 ### Example Usages
 
 {% tabs %}
-{% tab title="Node.JS" %}
-```coffeescript
-const axios = require('axios');
+{% tab title="JavaScript" %}
+```javascript
 
-axios({
-	method: 'POST',
-	url: 'https://api.wapim.io/api/v1/whatsapp/message/text',
-	headers: {
-		token: 'YOUR_WAPIM_TOKEN',
-	},
-	data: { phone_number: 'Recipient Number', message: 'Hello Wapim :)' },
-})
-	.then(response => {
-		console.log(response.data);
-	})
-	.catch(({ response }) => {
-		console.log(response.data);
-	});
 ```
 {% endtab %}
 
 {% tab title="cURL" %}
 ```bash
-curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/message/text \
-	-H "token: YOUR_WAPIM_TOKEN" \
-	-d '{"phone_number": "Recipient Number", "message" : "Hello Wapim :)"}'
+
 ```
 {% endtab %}
 {% endtabs %}
-
-
 
