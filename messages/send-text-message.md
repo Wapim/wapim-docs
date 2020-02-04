@@ -89,7 +89,6 @@ axios({
 	.catch(({ response }) => {
 		console.log(response.data);
 	});
-
 ```
 {% endtab %}
 
