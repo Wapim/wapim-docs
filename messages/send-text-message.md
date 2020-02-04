@@ -73,6 +73,22 @@ Missing or wrong params!
 {% tabs %}
 {% tab title="JavaScript" %}
 ```javascript
+const axios = require('axios');
+
+axios({
+	method: 'POST',
+	url: 'https://api.wapim.io/api/v1/whatsapp/message/text',
+	headers: {
+		token: 'YOUR_WAPIM_TOKEN',
+	},
+	data: { phone_number: 'Recipient Number', message: 'Hello Wapim :)' },
+})
+	.then(response => {
+		console.log(response.data);
+	})
+	.catch(({ response }) => {
+		console.log(response.data);
+	});
 
 ```
 {% endtab %}
@@ -82,7 +98,7 @@ Missing or wrong params!
 curl \
 	-X POST https://api.wapim.io/api/v1/whatsapp/message/text \ 
 	-H "token: YOUR_WAPIM_TOKEN" \
-	-d '{"phone_number": "Recipient Number", "message" : "Hello Wapim"}'
+	-d '{"phone_number": "Recipient Number", "message" : "Hello Wapim :)"}'
 ```
 {% endtab %}
 {% endtabs %}
