@@ -2,18 +2,18 @@
 
 * [Before you start](README.md)
 
-## ✨ Messages
+## Messages
 
 * [Send Text Message](messages/send-text-message.md)
 * [Send Image Message](messages/send-image-message.md)
 
-## ℹ️Informations
+## Informations
 
 * [Get Device Info](informations/device-info.md)
 * [Get Contact List](informations/contacts.md)
 * [Get Profile Photos](informations/get-profile-photo.md)
 
-## 👥 Group
+## Group
 
 * [Get Active Groups](group/active-groups.md)
 * [Get Group Information](group/group-info.md)
