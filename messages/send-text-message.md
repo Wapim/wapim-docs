@@ -15,16 +15,17 @@ This endpoint sends an text message.
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="phone\_number" type="string" required=true %}
+A phone number starting with the country code.
+{% endapi-method-parameter %}
+
 {% api-method-headers %}
 {% api-method-parameter name="token" type="string" required=true %}
 Authentication token.
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="phone\_number" type="string" required=true %}
-A phone number starting with the country code.
-{% endapi-method-parameter %}
 
 {% api-method-parameter name="message" type="string" required=true %}
 Content of text message
