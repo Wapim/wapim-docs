@@ -72,7 +72,7 @@ Missing or wrong params!
 
 {% tabs %}
 {% tab title="JavaScript" %}
-```javascript
+```coffeescript
 const axios = require('axios');
 
 axios({
