@@ -2,7 +2,7 @@
 
 * [Before you start](README.md)
 
-## Informations
+## ℹ️Informations
 
 * [Get Device Info](informations/device-info.md)
 * [Get Contact List](informations/contacts.md)
