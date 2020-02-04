@@ -1,4 +1,4 @@
-# Device Info
+# Get Device Info
 
 {% api-method method="get" host="https://api.wapim.io/" path="api/v1/whatsapp/profile/device" %}
 {% api-method-summary %}
@@ -11,6 +11,12 @@ This endpoint get device info.
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="token" type="string" required=true %}
+Authentication token.
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -23,8 +29,8 @@ Succesfully getting device info.
     "Battery": 43,
     "Platform": "smbi",
     "Connected": true,
-    "Pushname": "Brain Notification",
-    "Wid": "908511851751@c.us",
+    "Pushname": "WAPIM",
+    "Wid": "90XXXXXXXXXXXX@c.us",
     "Lc": "TR",
     "Phone": {
       "Mcc": "286",
@@ -37,7 +43,7 @@ Succesfully getting device info.
     },
     "Plugged": false,
     "Tos": 0,
-    "Lg": "tr",
+    "Lg": "en",
     "Is24h": true
 }
 ```
@@ -64,4 +70,6 @@ Unverifiable parameters.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+
 

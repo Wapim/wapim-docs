@@ -10,8 +10,8 @@
 
 ## Messages
 
-* [Send Text Message](messages/text-message.md)
-* [Send Image Message](messages/photo-message.md)
+* [Send Text Message](messages/send-text-message.md)
+* [Send Image Message](messages/send-image-message.md)
 
 ## Group
 

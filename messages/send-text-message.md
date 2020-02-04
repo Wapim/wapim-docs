@@ -72,13 +72,13 @@ Missing or wrong params!
 
 {% tabs %}
 {% tab title="JavaScript" %}
-```text
+```javascript
 
 ```
 {% endtab %}
 
 {% tab title="cURL" %}
-```
+```bash
 
 ```
 {% endtab %}
