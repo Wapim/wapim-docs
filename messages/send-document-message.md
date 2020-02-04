@@ -2,26 +2,32 @@
 description: You can send WhatsApp image messages with this endpoint.
 ---
 
-# Send Image Message
+# Send Document Message
 
-{% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/message/image" %}
+{% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/message/document" %}
 {% api-method-summary %}
-Send Image Message
+Send Document Messages
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint send an image message.
+This endpoint send a document message.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="phone\_number" type="string" required=true %}
-A phone number starting with the country code.
+{% api-method-headers %}
+{% api-method-parameter name="token" type="string" required=true %}
+Authentication token.
 {% endapi-method-parameter %}
+{% endapi-method-headers %}
 
+{% api-method-body-parameters %}
 {% api-method-parameter name="content\_url" type="string" required=true %}
 Content URL
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="phone\_number" type="string" required=true %}
+A phone number starting with the country code.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -61,7 +67,7 @@ Missing or wrong params!
 
 {% api-method-response-example httpCode=413 %}
 {% api-method-response-example-description %}
-Big image file!
+Big document file!
 {% endapi-method-response-example-description %}
 
 ```
@@ -76,6 +82,4 @@ Big image file!
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 
