@@ -4,6 +4,10 @@ description: You can send WhatsApp image messages with this endpoint.
 
 # Send Image Message
 
+{% hint style="warning" %}
+Image file The image file can be up to **5mb**.
+{% endhint %}
+
 {% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/message/image" %}
 {% api-method-summary %}
 Send Image Message
@@ -22,23 +26,21 @@ Authentication token.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-
 {% api-method-parameter name="phone\_number" type="string" required=true %}
-A phone number starting with the country code.
+A phone number starting with the country code. US Example \(15417543010\).
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="content\_url" type="string" required=true %}
-Content URL
+Content URL. \(**Max. 5mb**\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="caption" type="string" required=false %}
-Message caption.
+Text under the image.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="scheduled" type="string" required=false %}
-Schedule time.
+{% api-method-parameter name="scheduled\_time" type="string" required=false %}
+Schedule time \(timestamp\).  
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -48,13 +50,12 @@ Schedule time.
 Successfully send image message.
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "queue_message_id": "905546453474_997B21D0C8B90189041D",
     "message": "We reached successfully"
 }
 ```
-
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
@@ -62,7 +63,7 @@ Successfully send image message.
 Missing or wrong params!
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "status": false,
     "code": 400,
@@ -74,7 +75,6 @@ Missing or wrong params!
     }
 }
 ```
-
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=413 %}
@@ -82,7 +82,7 @@ Missing or wrong params!
 Big image file!
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "status": false,
     "code": 413,
@@ -90,8 +90,8 @@ Big image file!
     "error": "Max 5 MB file."
 }
 ```
-
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
