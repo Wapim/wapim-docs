@@ -22,13 +22,6 @@ Authentication token.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="caption" type="string" required=false %}
-Text under the document.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="scheduled\_time" type="string" required=false %}
-Scheduled time. \(Timestamp\)
-{% endapi-method-parameter %}
 
 {% api-method-parameter name="content\_url" type="string" required=true %}
 Content URL
@@ -37,6 +30,15 @@ Content URL
 {% api-method-parameter name="phone\_number" type="string" required=true %}
 A phone number starting with the country code.
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="caption" type="string" required=false %}
+Text under the document.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="scheduled\_time" type="string" required=false %}
+Scheduled time. \(Timestamp\)
+{% endapi-method-parameter %}
+
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -52,6 +54,7 @@ Successfully send image message.
     "message": "We reached successfully"
 }
 ```
+
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
@@ -71,6 +74,7 @@ Missing or wrong params!
     }
 }
 ```
+
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=413 %}
@@ -86,8 +90,8 @@ Big document file!
     "error": "Max 5 MB file."
 }
 ```
+
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
