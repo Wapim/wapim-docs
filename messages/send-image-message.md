@@ -4,13 +4,6 @@ description: You can send WhatsApp image messages with this endpoint.
 
 # Send Image Message
 
-{% hint style="info" %}
-For example:
-
-* [https://picsum.photos/800/600](https://picsum.photos/800/600)
-* 
-{% endhint %}
-
 {% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/message/image" %}
 {% api-method-summary %}
 Send Image Message
