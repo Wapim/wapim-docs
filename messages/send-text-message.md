@@ -22,6 +22,10 @@ Authentication token.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="scheduled\_time" type="string" required=false %}
+
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="phone\_number" type="string" required=true %}
 A phone number starting with the country code.
 {% endapi-method-parameter %}
