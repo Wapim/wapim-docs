@@ -22,8 +22,9 @@ Authentication token.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+
 {% api-method-parameter name="phone\_number" type="string" required=true %}
-A phone number starting with the country code. US example: "15417543010".
+A phone number starting with the country code. US Example \(15417543010\).
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="content\_url" type="string" required=true %}
@@ -37,6 +38,7 @@ Text under the document.
 {% api-method-parameter name="scheduled\_time" type="string" required=false %}
 Scheduled time. \(Timestamp\)
 {% endapi-method-parameter %}
+
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -46,12 +48,13 @@ Scheduled time. \(Timestamp\)
 Successfully send image message.
 {% endapi-method-response-example-description %}
 
-```text
+```
 {
-    "queue_message_id": "15417543010_997B21D0C8B90189041D",
+    "queue_message_id": "905546453474_997B21D0C8B90189041D",
     "message": "We reached successfully"
 }
 ```
+
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
@@ -59,7 +62,7 @@ Successfully send image message.
 Missing or wrong params!
 {% endapi-method-response-example-description %}
 
-```text
+```
 {
     "status": false,
     "code": 400,
@@ -71,6 +74,7 @@ Missing or wrong params!
     }
 }
 ```
+
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=413 %}
@@ -78,7 +82,7 @@ Missing or wrong params!
 Big document file!
 {% endapi-method-response-example-description %}
 
-```text
+```
 {
     "status": false,
     "code": 413,
@@ -86,8 +90,8 @@ Big document file!
     "error": "Max 5 MB file."
 }
 ```
+
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-

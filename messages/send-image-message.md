@@ -2,7 +2,7 @@
 description: You can send WhatsApp image messages with this endpoint.
 ---
 
-# Image Message
+# Send Image Message
 
 {% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/message/image" %}
 {% api-method-summary %}
@@ -23,7 +23,7 @@ Authentication token.
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="phone\_number" type="string" required=true %}
-A phone number starting with the country code. US example: "15417543010".
+A phone number starting with the country code. US Example \(15417543010\).
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="content\_url" type="string" required=true %}
@@ -35,7 +35,7 @@ Text under the image.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="scheduled\_time" type="string" required=false %}
-Schedule time. \(Timestamp\)
+Schedule time \(timestamp\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -48,7 +48,7 @@ Successfully send image message.
 
 ```text
 {
-    "queue_message_id": "15417543010_997B21D0C8B90189041D",
+    "queue_message_id": "905546453474_997B21D0C8B90189041D",
     "message": "We reached successfully"
 }
 ```
@@ -103,7 +103,7 @@ axios
 		'https://api.wapim.io/api/v1/whatsapp/message/image',
 		{
 			phone_number: 'Recipient Number',
-			content_url: 'https://i.picsum.photos/id/859/600/400.jpg',
+			content_url: 'https://i.picsum.photos/id/859/800/600.jpg',
 			caption: 'Hello from Wapim'
 		},
 		{
@@ -126,7 +126,7 @@ axios
 curl \
   -X POST https://api.wapim.io/api/v1/whatsapp/message/image \
   -H "token: YOUR WAPIM TOKEN" \
-  -d '{"phone_number": "Recipient Number", "content_url":"https://i.picsum.photos/id/859/600/400.jpg",  "caption" : "Hello from Wapim"}'
+  -d '{"phone_number": "Recipient Number", "content_url":"https://i.picsum.photos/id/859/800/600.jpg",  "caption" : "Hello from Wapim"}'
 ```
 {% endtab %}
 {% endtabs %}
