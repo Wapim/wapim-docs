@@ -17,7 +17,7 @@ This endpoint send an image message.
 {% api-method-request %}
 {% api-method-headers %}
 {% api-method-parameter name="token" type="string" required=true %}
-
+Authentication token.
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
