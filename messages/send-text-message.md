@@ -95,9 +95,9 @@ axios({
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/message/image/queue \
-        -H "token: 4F4TKBUAMC8LU833TRSRJ7" \
-        -d '{"phone_number": "905348372911", "content_url":"https://i.picsum.photos/id/859/800/600.jpg",  "caption" : "Hello Wapim :)"}'
+  -X POST https://api.wapim.io/api/v1/whatsapp/message/image \
+  -H "token: YOUR WAPIM TOKEN" \
+  -d '{"phone_number": "Recipient Number", "content_url":"https://i.picsum.photos/id/859/800/600.jpg",  "caption" : "Hello Wapim :)"}'
 ```
 {% endtab %}
 {% endtabs %}
