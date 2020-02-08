@@ -2,7 +2,7 @@
 description: You can send WhatsApp text messages with this endpoint.
 ---
 
-# Send Text Message
+# Text Message
 
 {% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/message/text" %}
 {% api-method-summary %}
@@ -22,19 +22,17 @@ Authentication token.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-
 {% api-method-parameter name="phone\_number" type="string" required=true %}
 A phone number starting with the country code.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="message" type="string" required=true %}
-Content of text message
+Content of text message.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="scheduled\_time" type="string" required=false %}
-Schedule time \(timestamp\)
+Schedule time. \(Timestamp\)
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -50,7 +48,6 @@ Successfully send text message.
     "message": "We reached successfully"
 }
 ```
-
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
@@ -70,7 +67,6 @@ Missing or wrong params!
     }
 }
 ```
-
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -80,36 +76,33 @@ Missing or wrong params!
 
 {% tabs %}
 {% tab title="Node.js" %}
-
 ```coffeescript
 const axios = require('axios');
 
 axios({
-	method: 'POST',
-	url: 'https://api.wapim.io/api/v1/whatsapp/message/text',
-	headers: {
-		token: 'YOUR_WAPIM_TOKEN',
-	},
-	data: { phone_number: 'Recipient Number', message: 'Hello Wapim :)' },
+    method: 'POST',
+    url: 'https://api.wapim.io/api/v1/whatsapp/message/text',
+    headers: {
+        token: 'YOUR_WAPIM_TOKEN',
+    },
+    data: { phone_number: 'Recipient Number', message: 'Hello Wapim :)' },
 })
-	.then(response => {
-		console.log(response.data);
-	})
-	.catch(error => {
-		console.log(error.response.data);
-	});
+    .then(response => {
+        console.log(response.data);
+    })
+    .catch(error => {
+        console.log(error.response.data);
+    });
 ```
-
 {% endtab %}
 
 {% tab title="cURL" %}
-
 ```bash
 curl \
   -X POST https://api.wapim.io/api/v1/whatsapp/message/text \
   -H "token: YOUR WAPIM TOKEN" \
   -d '{"phone_number": "Recipient Number", "message" : "Hello from Wapim"}'
 ```
-
 {% endtab %}
 {% endtabs %}
+

@@ -1,4 +1,4 @@
-# Get Contact List
+# Contact List
 
 {% api-method method="get" host="https://api.wapim.io/" path="api/v1/whatsapp/contacts" %}
 {% api-method-summary %}

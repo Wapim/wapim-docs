@@ -1,4 +1,4 @@
-# Get Device Info
+# Device Info
 
 {% api-method method="get" host="https://api.wapim.io/" path="api/v1/whatsapp/profile/device" %}
 {% api-method-summary %}

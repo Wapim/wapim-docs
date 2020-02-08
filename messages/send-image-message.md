@@ -2,7 +2,7 @@
 description: You can send WhatsApp image messages with this endpoint.
 ---
 
-# Send Image Message
+# Image Message
 
 {% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/message/image" %}
 {% api-method-summary %}

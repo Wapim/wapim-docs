@@ -1,4 +1,4 @@
-# Get Profile Photos
+# Profile Photos
 
 {% api-method method="get" host="https://api.wapim.io/" path="api/v1/whatsapp/profilephoto" %}
 {% api-method-summary %}
