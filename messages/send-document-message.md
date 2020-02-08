@@ -1,5 +1,5 @@
 ---
-description: You can send WhatsApp image messages with this endpoint.
+description: You can send WhatsApp document messages with this endpoint.
 ---
 
 # Document Message

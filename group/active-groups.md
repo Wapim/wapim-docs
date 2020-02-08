@@ -1,4 +1,4 @@
-# Active Groups
+# Get Active Groups
 
 {% api-method method="get" host="https://api.wapim.io/" path="api/v1/whatsapp/groups" %}
 {% api-method-summary %}
