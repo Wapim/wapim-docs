@@ -22,6 +22,14 @@ Authentication token.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="caption" type="string" required=false %}
+Text under the document.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="scheduled\_time" type="string" required=false %}
+Scheduled time. \(Timestamp\)
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="content\_url" type="string" required=true %}
 Content URL
 {% endapi-method-parameter %}
