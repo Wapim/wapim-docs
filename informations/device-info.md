@@ -1,4 +1,4 @@
-# Device Info
+# Get Device Info
 
 {% api-method method="get" host="https://api.wapim.io/" path="api/v1/whatsapp/profile/device" %}
 {% api-method-summary %}
@@ -30,7 +30,7 @@ Succesfully getting device info.
     "Platform": "smbi",
     "Connected": true,
     "Pushname": "WAPIM",
-    "Wid": "15417543010@c.us",
+    "Wid": "90XXXXXXXXXXXX@c.us",
     "Lc": "TR",
     "Phone": {
       "Mcc": "286",
