@@ -35,7 +35,7 @@ Text under the image.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="scheduled\_time" type="string" required=false %}
-Schedule time \(timestamp\).  
+Schedule time \(timestamp\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -90,4 +90,44 @@ Big image file!
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+### Example Usages
+
+{% tabs %}
+{% tab title="Node.js" %}
+```coffeescript
+const axios = require('axios');
+
+axios
+	.post(
+		'https://api.wapim.io/api/v1/whatsapp/message/image',
+		{
+			phone_number: 'Recipient Number',
+			content_url: 'https://i.picsum.photos/id/859/800/600.jpg',
+			caption: 'Hello from Wapim'
+		},
+		{
+			headers: {
+				token: 'YOUR WAPIM TOKEN',
+			},
+		},
+	)
+	.then(response => {
+		console.log(response.data);
+	})
+	.catch(({ response }) => {
+		console.log(response.data);
+	});
+```
+{% endtab %}
+
+{% tab title="cURL" %}
+```bash
+curl \
+  -X POST https://api.wapim.io/api/v1/whatsapp/message/image \
+  -H "token: YOUR WAPIM TOKEN" \
+  -d '{"phone_number": "Recipient Number", "content_url":"https://i.picsum.photos/id/859/800/600.jpg",  "caption" : "Hello from Wapim"}'
+```
+{% endtab %}
+{% endtabs %}
 

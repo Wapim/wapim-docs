@@ -23,7 +23,7 @@ Authentication token.
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="scheduled\_time" type="string" required=false %}
-
+Schedule time \(timestamp\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="phone\_number" type="string" required=true %}
