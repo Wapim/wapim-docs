@@ -35,7 +35,7 @@ Text under the image.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="scheduled\_time" type="string" required=false %}
-Schedule time \(timestamp\)
+Schedule time. \(Timestamp\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -103,7 +103,7 @@ axios
 		'https://api.wapim.io/api/v1/whatsapp/message/image',
 		{
 			phone_number: 'Recipient Number',
-			content_url: 'https://i.picsum.photos/id/859/800/600.jpg',
+			content_url: 'https://i.picsum.photos/id/859/600/400.jpg',
 			caption: 'Hello from Wapim'
 		},
 		{
@@ -126,7 +126,7 @@ axios
 curl \
   -X POST https://api.wapim.io/api/v1/whatsapp/message/image \
   -H "token: YOUR WAPIM TOKEN" \
-  -d '{"phone_number": "Recipient Number", "content_url":"https://i.picsum.photos/id/859/800/600.jpg",  "caption" : "Hello from Wapim"}'
+  -d '{"phone_number": "Recipient Number", "content_url":"https://i.picsum.photos/id/859/600/400.jpg",  "caption" : "Hello from Wapim"}'
 ```
 {% endtab %}
 {% endtabs %}
