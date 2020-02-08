@@ -104,7 +104,7 @@ axios
 		{
 			phone_number: 'Recipient Number',
 			content_url: 'https://i.picsum.photos/id/859/800/600.jpg',
-			caption: 'Hello from Wapim.'
+			caption: 'Hello from Wapim'
 		},
 		{
 			headers: {
@@ -118,6 +118,15 @@ axios
 	.catch(({ response }) => {
 		console.log(response.data);
 	});
+```
+{% endtab %}
+
+{% tab title="cURL" %}
+```
+curl \
+  -X POST https://api.wapim.io/api/v1/whatsapp/message/image \
+  -H "token: YOUR WAPIM TOKEN" \
+  -d '{"phone_number": "Recipient Number", "content_url":"https://i.picsum.photos/id/859/800/600.jpg",  "caption" : "Hello from Wapim"}'
 ```
 {% endtab %}
 {% endtabs %}
