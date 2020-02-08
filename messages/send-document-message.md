@@ -23,12 +23,12 @@ Authentication token.
 
 {% api-method-body-parameters %}
 
-{% api-method-parameter name="content\_url" type="string" required=true %}
-Content URL
+{% api-method-parameter name="phone\_number" type="string" required=true %}
+A phone number starting with the country code. US Example \(15417543010\).
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="phone\_number" type="string" required=true %}
-A phone number starting with the country code.
+{% api-method-parameter name="content\_url" type="string" required=true %}
+Content URL
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="caption" type="string" required=false %}
