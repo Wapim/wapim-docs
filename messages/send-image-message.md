@@ -4,10 +4,6 @@ description: You can send WhatsApp image messages with this endpoint.
 
 # Send Image Message
 
-{% hint style="warning" %}
-Image file The image file can be up to **5mb**.
-{% endhint %}
-
 {% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/message/image" %}
 {% api-method-summary %}
 Send Image Message
