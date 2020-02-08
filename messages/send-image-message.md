@@ -22,7 +22,7 @@ Authentication token.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="scheduled\_time" type="string" required=false %}
+{% api-method-parameter name="scheduled" type="string" required=false %}
 Schedule time.
 {% endapi-method-parameter %}
 
