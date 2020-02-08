@@ -91,34 +91,3 @@ Big image file!
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Example Usages
-
-{% tabs %}
-{% tab title="Node.js" %}
-```coffeescript
-const axios = require('axios');
-
-axios
-	.post(
-		'https://api.wapim.io/api/v1/whatsapp/message/image/queue',
-		{
-			phone_number: '',
-			content_url: 'https://picsum.photos/id/1/200/300',
-			caption: 'Hello from Wapim.'
-		},
-		{
-			headers: {
-				token: 'YOUR WAPIM TOKEN',
-			},
-		},
-	)
-	.then(response => {
-		console.log(response.data);
-	})
-	.catch(({ response }) => {
-		console.log(response.data);
-	});
-```
-{% endtab %}
-{% endtabs %}
-
