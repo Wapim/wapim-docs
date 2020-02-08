@@ -10,7 +10,7 @@ Send Text Message
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint sends an text message.
+This endpoint send a text message.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -26,9 +26,6 @@ Authentication token.
 A phone number starting with the country code.
 {% endapi-method-parameter %}
 
-
-
-
 {% api-method-parameter name="message" type="string" required=true %}
 Content of text message
 {% endapi-method-parameter %}
@@ -43,7 +40,7 @@ Successfully send text message.
 
 ```text
 {
-    "queue_message_id": "905546453273_997B21D0C8B90189041D",
+    "queue_message_id": "905546453474_997B21D0C8B90189041D",
     "message": "We reached successfully"
 }
 ```
@@ -71,18 +68,36 @@ Missing or wrong params!
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Example Usages
+## Example Usages
 
 {% tabs %}
-{% tab title="JavaScript" %}
-```javascript
+{% tab title="Node.js" %}
+```coffeescript
+const axios = require('axios');
 
+axios({
+	method: 'POST',
+	url: 'https://api.wapim.io/api/v1/whatsapp/message/text',
+	headers: {
+		token: 'YOUR_WAPIM_TOKEN',
+	},
+	data: { phone_number: 'Recipient Number', message: 'Hello Wapim :)' },
+})
+	.then(response => {
+		console.log(response.data);
+	})
+	.catch(error => {
+		console.log(error.response.data);
+	});
 ```
 {% endtab %}
 
 {% tab title="cURL" %}
 ```bash
-
+curl \
+  -X POST https://api.wapim.io/api/v1/whatsapp/message/image/queue \
+        -H "token: 4F4TKBUAMC8LU833TRSRJ7" \
+        -d '{"phone_number": "905348372911", "content_url":"https://i.picsum.photos/id/859/800/600.jpg",  "caption" : "Hello Wapim :)"}'
 ```
 {% endtab %}
 {% endtabs %}
