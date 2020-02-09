@@ -60,16 +60,36 @@ Requested photo is blocked or no photo for this number.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Example Usages
+
 {% tabs %}
 {% tab title="Node.js" %}
-```text
+```coffeescript
+const axios = require('axios');
 
+axios
+	.post(
+		'https://api.wapim.io/api/v1/whatsapp/profilephoto',
+		{
+			phone_number: 'PHONE_NUMBER',
+		},
+		{
+			headers: {
+				token: 'YOUR_WAPIM_TOKEN',
+			},
+		},
+	)
+	.then(response => console.log(response.data))
+	.catch(error => console.log(error.response.data));
 ```
 {% endtab %}
 
 {% tab title="cURL" %}
-```
-
+```bash
+curl \
+  -X POST https://api.wapim.io/api/v1/whatsapp/profilephoto \
+  -H "token: YOUR_WAPIM_TOKEN" \
+  -d '{"phone_number": "PHONE_NUMBER"}'
 ```
 {% endtab %}
 {% endtabs %}
