@@ -2,7 +2,7 @@
 description: You can send WhatsApp image messages with this endpoint.
 ---
 
-# Send Image Message
+# Image
 
 {% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/message/image" %}
 {% api-method-summary %}
@@ -23,7 +23,7 @@ Authentication token.
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="phone\_number" type="string" required=true %}
-A phone number starting with the country code. US Example \(15417543010\).
+A phone number starting with the country code. US example: "15417543010".
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="content\_url" type="string" required=true %}
@@ -35,7 +35,7 @@ Text under the image.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="scheduled\_time" type="string" required=false %}
-Schedule time \(timestamp\)
+Schedule time. \(Timestamp\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -48,7 +48,7 @@ Successfully send image message.
 
 ```text
 {
-    "queue_message_id": "905546453474_997B21D0C8B90189041D",
+    "queue_message_id": "15417543010_997B21D0C8B90189041D",
     "message": "We reached successfully"
 }
 ```
@@ -102,22 +102,18 @@ axios
 	.post(
 		'https://api.wapim.io/api/v1/whatsapp/message/image',
 		{
-			phone_number: 'Recipient Number',
-			content_url: 'https://i.picsum.photos/id/859/800/600.jpg',
+			phone_number: 'RECIPIENT_NUMBER',
+			content_url: 'https://i.picsum.photos/id/859/600/400.jpg',
 			caption: 'Hello from Wapim'
 		},
 		{
 			headers: {
-				token: 'YOUR WAPIM TOKEN',
+				token: 'YOUR_WAPIM_TOKEN',
 			},
 		},
 	)
-	.then(response => {
-		console.log(response.data);
-	})
-	.catch(({ response }) => {
-		console.log(response.data);
-	});
+	.then(response => console.log(response.data))
+	.catch(error => console.log(error.response.data));
 ```
 {% endtab %}
 
@@ -125,8 +121,8 @@ axios
 ```bash
 curl \
   -X POST https://api.wapim.io/api/v1/whatsapp/message/image \
-  -H "token: YOUR WAPIM TOKEN" \
-  -d '{"phone_number": "Recipient Number", "content_url":"https://i.picsum.photos/id/859/800/600.jpg",  "caption" : "Hello from Wapim"}'
+  -H "token: YOUR_WAPIM_TOKEN" \
+  -d '{"phone_number": "RECIPIENT_NUMBER", "content_url":"https://i.picsum.photos/id/859/600/400.jpg",  "caption" : "Hello from Wapim"}'
 ```
 {% endtab %}
 {% endtabs %}

@@ -4,9 +4,12 @@
 
 ## Send Messages
 
-* [Text Message](messages/send-text-message.md)
-* [Image Message](messages/send-image-message.md)
-* [-Document Message](messages/send-document-message.md)
+* [Text](send-messages/send-text-message.md)
+* [Image](send-messages/send-image-message.md)
+* [Video](send-messages/video.md)
+* [-Document](send-messages/send-document-message.md)
+* [Audio](send-messages/audio.md)
+* [Location](send-messages/location-message.md)
 
 ## Get Informations
 
