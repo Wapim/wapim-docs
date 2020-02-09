@@ -1,4 +1,4 @@
-# Add Participant to WhatsApp Group
+# Add Participant to Group
 
 {% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/group/add" %}
 {% api-method-summary %}
@@ -11,13 +11,19 @@ This endpoint add participant to WhatsApp group.
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="token" type="string" required=true %}
+Authentication token.
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
 {% api-method-body-parameters %}
 {% api-method-parameter name="gid" type="string" required=true %}
 Group ID
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="participants" type="string" required=true %}
-Group members to be added numbers, you can seperate commas for multiple numbers. \(For example: 905546450000,905433468576\)
+x2
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}

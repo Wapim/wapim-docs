@@ -23,7 +23,7 @@ Group ID
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="participants" type="string" required=true %}
-Group members to be added numbers, you can seperate commas for multiple numbers. \(For example: 905546450000,905433468576\)
+x2
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
