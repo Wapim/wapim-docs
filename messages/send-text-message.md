@@ -81,16 +81,16 @@ const axios = require('axios');
 
 axios
   .post(
-    'https://api.wapim.io/api/v1/whatsapp/message/text',
-    {
-			phone_number: 'Recipient Number',
-			message: 'Hello Wapim :)'
-    },
-    {
-			headers: {
-				token: 'YOUR_WAPIM_TOKEN',
+			'https://api.wapim.io/api/v1/whatsapp/message/text',
+			{
+				phone_number: 'Recipient Number',
+				message: 'Hello Wapim :)'
+			},
+			{
+				headers: {
+					token: 'YOUR_WAPIM_TOKEN',
+				}
 			}
-    }
     )
     .then(response => console.log(response.data))
     .catch(error => console.log(error.response.data));
