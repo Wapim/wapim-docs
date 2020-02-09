@@ -1,4 +1,4 @@
-# Get Active Groups
+# Active Groups
 
 {% api-method method="get" host="https://api.wapim.io/" path="api/v1/whatsapp/groups" %}
 {% api-method-summary %}
@@ -11,6 +11,12 @@ This endpoint get contacts.
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="token" type="string" required=true %}
+Authentication token.
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -24,8 +30,8 @@ Succesfully getting active groups.
     "code": 200,
     "message": {
       "Active Groups": {
-        "905320602911-1560716540": "Wapim.io",
-        "905348372911-1563579554": "Merhaba Group"
+        "15417543010-1560716540": "Wapim.io",
+        "15417543011-1563579554": "Another Group"
       }
     }
   }
