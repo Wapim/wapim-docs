@@ -31,7 +31,7 @@ Content of text message
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="scheduled\_time" type="string" required=false %}
-Schedule time \(timestamp\)
+Schedule time. \(Timestamp\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
