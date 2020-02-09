@@ -19,19 +19,19 @@ Authentication token.
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="phone\_number" type="string" required=true %}
-phonewapim
+A phone number starting with the country code. US Example \(15417543010\).
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="content\_url" type="string" required=true %}
-phonewapim
+Content URL. \(**Max. 5mb**\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="caption" type="string" required=false %}
-phonewapim
+Text under the video.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="scheduled\_time" type="string" required=false %}
-phonewapim
+Schedule time \(Timestamp\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
