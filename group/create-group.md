@@ -11,19 +11,13 @@ This endpoint creates a new WhatsApp group.
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="token" type="string" required=true %}
-Authentication token.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
 {% api-method-body-parameters %}
 {% api-method-parameter name="subject" type="string" required=true %}
 The subject of the group
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="participants" type="string" required=true %}
-Phone numbers to be added to the group. You can separate with commas for multiple phone numbers. \(For example: 905546450000,905433468576\)
+group members to be added numbers, you can seperate commas for multiple numbers. \(For example: 905546450000,905433468576\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
