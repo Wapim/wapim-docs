@@ -1,4 +1,4 @@
-# Get Profile Photos
+# Profile Photos
 
 {% api-method method="get" host="https://api.wapim.io/" path="api/v1/whatsapp/profilephoto" %}
 {% api-method-summary %}
@@ -59,4 +59,18 @@ Requested photo is blocked or no photo for this number.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+{% tabs %}
+{% tab title="Node.js" %}
+```text
+
+```
+{% endtab %}
+
+{% tab title="cURL" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
 

@@ -12,7 +12,7 @@
 
 * [Device Info](informations/device-info.md)
 * [Contact List](informations/contacts.md)
-* [Profile Photos](informations/get-profile-photo.md)
+* [Profile Photos](get-informations/get-profile-photo.md)
 
 ## Group
 
