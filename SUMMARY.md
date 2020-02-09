@@ -4,10 +4,10 @@
 
 ## Send Messages
 
-* [Text](send-messages/send-text-message.md)
-* [Image](send-messages/send-image-message.md)
+* [Text](messages/send-text-message.md)
+* [Image](messages/send-image-message.md)
 * [Video](send-messages/video.md)
-* [-Document](send-messages/send-document-message.md)
+* [-Document](messages/send-document-message.md)
 * [Audio](send-messages/audio.md)
 * [Location](send-messages/location-message.md)
 
@@ -22,8 +22,8 @@
 * [Active Groups](group/active-groups.md)
 * [-Group Informations](group/group-info.md)
 * [Create New Group](group/create-group.md)
-* [Add Participant to Group](group/add-participant-to-whatsapp-group.md)
-* [Remove Participant from Group](group/remove-participant-from-whatsapp-group.md)
+* [-Add Participant to Group](group/add-participant-to-whatsapp-group.md)
+* [-Remove Participant from Group](group/remove-participant-from-whatsapp-group.md)
 
 ## Websocket
 
