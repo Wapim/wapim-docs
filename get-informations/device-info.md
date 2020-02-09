@@ -86,7 +86,13 @@ axios
 	.catch(error => console.log(error.response.data));
 ```
 {% endtab %}
+
+{% tab title="cURL" %}
+```
+curl \ 
+ -X GET https://api.wapim.io/api/v1/whatsapp/profile/device \
+ -H "token: YOUR_WAPIM_TOKEN"
+```
+{% endtab %}
 {% endtabs %}
-
-
 
