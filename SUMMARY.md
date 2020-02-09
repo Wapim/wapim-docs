@@ -17,10 +17,10 @@
 ## Group
 
 * [Active Groups](group/active-groups.md)
-* [-Group Information](group/group-info.md)
+* [-Group Informations](group/group-informations.md)
 * [Create New Group](group/create-new-whatsapp-group.md)
 * [Add Participant to Group](group/add-participant-to-whatsapp-group.md)
-* [Remove Participant from WhatsApp Group](group/remove-participant-from-group.md)
+* [Remove Participant from Group](group/remove-participant-from-whatsapp-group.md)
 
 ## Websocket
 
