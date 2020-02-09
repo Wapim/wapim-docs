@@ -60,3 +60,35 @@ Could not find a cake matching this query.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% tabs %}
+{% tab title="Node.js" %}
+```coffeescript
+const axios = require('axios');
+
+axios
+	.post(
+		'https://api.wapim.io/api/v1/whatsapp/message/video',
+		{
+			phone_number: '15417543010',
+			content_url: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
+			caption: 'Hello from Wapim',
+		},
+		{
+			headers: {
+				token: 'YOUR_WAPIM_TOKEN',
+			},
+		},
+	)
+	.then(response => console.log(response.data))
+	.catch(error => console.log(error.response.data));
+
+```
+{% endtab %}
+
+{% tab title="cURL" %}
+```bash
+
+```
+{% endtab %}
+{% endtabs %}
+
