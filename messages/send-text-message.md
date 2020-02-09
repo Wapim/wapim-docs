@@ -42,7 +42,7 @@ Schedule time \(timestamp\)
 Successfully send text message.
 {% endapi-method-response-example-description %}
 
-```javascript
+```text
 {
     "queue_message_id": "15417543010_997B21D0C8B90189041D",
     "message": "We reached successfully"
@@ -55,7 +55,7 @@ Successfully send text message.
 Missing or wrong params!
 {% endapi-method-response-example-description %}
 
-```javascript
+```text
 {
     "status": false,
     "code": 400,
