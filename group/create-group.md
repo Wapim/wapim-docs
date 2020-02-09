@@ -11,13 +11,19 @@ This endpoint creates a new WhatsApp group.
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="token" type="string" required=true %}
+Authentication token.
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
 {% api-method-body-parameters %}
 {% api-method-parameter name="subject" type="string" required=true %}
 The subject of the group
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="participants" type="string" required=true %}
-group members to be added numbers, you can seperate commas for multiple numbers. \(For example: 905546450000,905433468576\)
+Phone numbers to be added to the group. You can separate with commas for multiple phone numbers. \(For example: 905546450000,905433468576\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -39,4 +45,37 @@ Succesfully created group.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+### Example Usages
+
+{% tabs %}
+{% tab title="Node.js" %}
+```coffeescript
+const axios = require('axios');
+
+axios
+	.post(
+		'https://api.wapim.io/api/v1/whatsapp/group/create',
+		{
+			subject: 'Welcome to Wapim!',
+			participants: 'PHONE_NUMBER_1,PHONE_NUMBER_2',
+		},
+		{
+			headers: {
+				token: 'YOUR_WAPIM_TOKEN',
+			},
+		},
+	)
+	.then(response => console.log(response.data))
+	.catch(error => console.log(error.response.data));
+
+```
+{% endtab %}
+
+{% tab title="cURL" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
 

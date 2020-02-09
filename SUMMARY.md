@@ -6,7 +6,7 @@
 
 * [Text Message](messages/send-text-message.md)
 * [Image Message](messages/send-image-message.md)
-* [-Document Message](send-messages/send-document-message.md)
+* [-Document Message](messages/send-document-message.md)
 
 ## Get Informations
 
