@@ -17,7 +17,7 @@ The subject of the group
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="participants" type="string" required=true %}
-group members to be added numbers, you can seperate commas for multiple numbers. \(For example: 905546450000,905433468576\)
+Phone numbers to be added to the group. You can separate with commas for multiple phone numbers. \(For example: 905546450000,905433468576\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
