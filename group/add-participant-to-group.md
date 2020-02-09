@@ -1,12 +1,12 @@
-# Remove Participant from Group
+# Add Participant to WhatsApp Group
 
-{% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/group/remove" %}
+{% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/group/add" %}
 {% api-method-summary %}
 Add participant to group
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint remove participant from WhatsApp group.
+This endpoint add participant to WhatsApp group.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -25,14 +25,14 @@ Group members to be added numbers, you can seperate commas for multiple numbers.
 {% api-method-response %}
 {% api-method-response-example httpCode=201 %}
 {% api-method-response-example-description %}
-Succesfully removed members from group.
+Succesfully added members to group.
 {% endapi-method-response-example-description %}
 
 ```text
  {
     "status": true,
     "code": 201,
-    "message": "The members were successfully removed from the group"
+    "message": "The members were successfully added to the group"
   }
 ```
 {% endapi-method-response-example %}
