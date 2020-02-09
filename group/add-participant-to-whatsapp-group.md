@@ -1,4 +1,4 @@
-# Add Participant to WhatsApp Group
+# Add Participant to Group
 
 {% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/group/add" %}
 {% api-method-summary %}

@@ -1,4 +1,4 @@
-# Get Device Info
+# Device Info
 
 {% api-method method="get" host="https://api.wapim.io/" path="api/v1/whatsapp/profile/device" %}
 {% api-method-summary %}
@@ -30,7 +30,7 @@ Succesfully getting device info.
     "Platform": "smbi",
     "Connected": true,
     "Pushname": "WAPIM",
-    "Wid": "90XXXXXXXXXXXX@c.us",
+    "Wid": "15417543010@c.us",
     "Lc": "TR",
     "Phone": {
       "Mcc": "286",
@@ -71,5 +71,30 @@ Unverifiable parameters.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Example Usages
 
+{% tabs %}
+{% tab title="Node.js" %}
+```coffeescript
+const axios = require('axios');
+
+axios
+	.get('https://api.wapim.io/api/v1/whatsapp/profile/device', {
+		headers: {
+			token: 'YOUR_WAPIM_TOKEN',
+		},
+	})
+	.then(response => console.log(response.data))
+	.catch(error => console.log(error.response.data));
+```
+{% endtab %}
+
+{% tab title="cURL" %}
+```bash
+curl \
+  -X GET https://api.wapim.io/api/v1/whatsapp/profile/device \
+  -H "token: YOUR_WAPIM_TOKEN"
+```
+{% endtab %}
+{% endtabs %}
 

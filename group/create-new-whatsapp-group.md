@@ -1,4 +1,4 @@
-# Create New WhatsApp Group
+# Create New Group
 
 {% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/group/create" %}
 {% api-method-summary %}
