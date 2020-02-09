@@ -1,4 +1,4 @@
-# Profile Photos
+# Get Profile Photos
 
 {% api-method method="get" host="https://api.wapim.io/" path="api/v1/whatsapp/profilephoto" %}
 {% api-method-summary %}
@@ -16,12 +16,6 @@ This endpoint get contacts.
 Authentication token.
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
-{% api-method-query-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
-
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="phone\_number" type="string" required=true %}
