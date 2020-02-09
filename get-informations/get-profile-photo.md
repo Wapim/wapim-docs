@@ -1,6 +1,6 @@
 # Profile Photos
 
-{% api-method method="get" host="https://api.wapim.io/" path="api/v1/whatsapp/profilephoto" %}
+{% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/profilephoto" %}
 {% api-method-summary %}
 Get Information of Device
 {% endapi-method-summary %}
