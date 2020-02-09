@@ -100,18 +100,18 @@ const axios = require('axios');
 
 axios
   .post(
-     'https://api.wapim.io/api/v1/whatsapp/message/image',
-      {
-        phone_number: 'Recipient Number',
-        content_url: 'https://i.picsum.photos/id/859/800/600.jpg',
-        caption: 'Hello from Wapim'
+   'https://api.wapim.io/api/v1/whatsapp/message/image',
+   {
+      phone_number: 'Recipient Number',
+      content_url: 'https://i.picsum.photos/id/859/800/600.jpg',
+      caption: 'Hello from Wapim'
+    },
+    {
+      headers: {
+       token: 'YOUR WAPIM TOKEN',
       },
-      {
-        headers: {
-         token: 'YOUR WAPIM TOKEN',
-        },
-      },
-    )
+    },
+  )
     .then(response => {
         console.log(response.data);
     })
