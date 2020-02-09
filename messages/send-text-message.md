@@ -2,7 +2,7 @@
 description: You can send WhatsApp text messages with this endpoint.
 ---
 
-# Text Message
+# Text
 
 {% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/message/text" %}
 {% api-method-summary %}
@@ -44,8 +44,8 @@ Successfully send text message.
 
 ```javascript
 {
-	"queue_message_id": "15417543010_997B21D0C8B90189041D",
-	"message": "We reached successfully"
+    "queue_message_id": "15417543010_997B21D0C8B90189041D",
+    "message": "We reached successfully"
 }
 ```
 {% endapi-method-response-example %}
@@ -57,14 +57,14 @@ Missing or wrong params!
 
 ```javascript
 {
-	"status": false,
-	"code": 400,
-	"message": "Bad Request",
-	"error": {
-		"Send Text": [
-			"Malformed or missing phone id or message data!"
-		]
-	}
+    "status": false,
+    "code": 400,
+    "message": "Bad Request",
+    "error": {
+        "Send Text": [
+            "Malformed or missing phone id or message data!"
+        ]
+    }
 }
 ```
 {% endapi-method-response-example %}
@@ -81,19 +81,19 @@ const axios = require('axios');
 
 axios
   .post(
-			'https://api.wapim.io/api/v1/whatsapp/message/text',
-			{
-				phone_number: 'Recipient Number',
-				message: 'Hello Wapim :)'
-			},
-			{
-				headers: {
-					token: 'YOUR_WAPIM_TOKEN',
-				}
-			}
-    )
-    .then(response => console.log(response.data))
-    .catch(error => console.log(error.response.data));
+    'https://api.wapim.io/api/v1/whatsapp/message/text',
+    {
+     phone_number: 'Recipient Number',
+     message: 'Hello Wapim :)'
+    },
+    {
+     headers: {
+      token: 'YOUR_WAPIM_TOKEN',
+     }
+    }
+  )
+  .then(response => console.log(response.data))
+  .catch(error => console.log(error.response.data));
 ```
 {% endtab %}
 
