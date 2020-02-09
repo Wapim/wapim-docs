@@ -87,7 +87,10 @@ axios
 
 {% tab title="cURL" %}
 ```bash
-
+curl \
+  -X POST https://api.wapim.io/api/v1/whatsapp/message/video \
+  -H "token: YOUR_WAPIM_TOKEN" \
+  -d '{"phone_number": "RECIPIENT_NUMBER", "content_url":"https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",  "caption" : "Hello from Wapim"}'
 ```
 {% endtab %}
 {% endtabs %}
