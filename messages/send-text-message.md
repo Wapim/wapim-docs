@@ -42,13 +42,12 @@ Schedule time \(timestamp\)
 Successfully send text message.
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
-	"queue_message_id": "15417543010_997B21D0C8B90189041D",
-	"message": "We reached successfully"
+    "queue_message_id": "15417543010_997B21D0C8B90189041D",
+    "message": "We reached successfully"
 }
 ```
-
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
@@ -56,19 +55,18 @@ Successfully send text message.
 Missing or wrong params!
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
-	"status": false,
-	"code": 400,
-	"message": "Bad Request",
-	"error": {
-		"Send Text": [
-			"Malformed or missing phone id or message data!"
-		]
-	}
+    "status": false,
+    "code": 400,
+    "message": "Bad Request",
+    "error": {
+        "Send Text": [
+            "Malformed or missing phone id or message data!"
+        ]
+    }
 }
 ```
-
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -78,8 +76,7 @@ Missing or wrong params!
 
 {% tabs %}
 {% tab title="Node.js" %}
-
-```javascript
+```coffeescript
 const axios = require('axios');
 
 axios
@@ -94,21 +91,19 @@ axios
             token: 'YOUR_WAPIM_TOKEN',
         }
     }
-	)
-	.then(response => console.log(response.data))
-	.catch(error => console.log(error.response.data));
+    )
+    .then(response => console.log(response.data))
+    .catch(error => console.log(error.response.data));
 ```
-
 {% endtab %}
 
 {% tab title="cURL" %}
-
 ```bash
 curl \
   -X POST https://api.wapim.io/api/v1/whatsapp/message/text \
   -H "token: YOUR WAPIM TOKEN" \
   -d '{"phone_number": "Recipient Number", "message" : "Hello from Wapim"}'
 ```
-
 {% endtab %}
 {% endtabs %}
+
