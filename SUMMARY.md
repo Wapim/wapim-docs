@@ -4,7 +4,7 @@
 
 ## Send Messages
 
-* [Text](messages/send-text-message.md)
+* [Text](send-messages/send-text-message.md)
 * [Image](messages/send-image-message.md)
 * [Video](send-messages/video.md)
 * [-Document](messages/send-document-message.md)
