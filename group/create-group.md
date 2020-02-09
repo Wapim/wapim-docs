@@ -73,8 +73,11 @@ axios
 {% endtab %}
 
 {% tab title="cURL" %}
-```
-
+```bash
+curl \
+  -X POST https://api.wapim.io/api/v1/whatsapp/group/create \
+  -H "token: YOUR_WAPIM_TOKEN" \
+  -d '{"subject": "Welcome to Wapim!", "participants":"PHONE_NUMBER_1,PHONE_NUMBER_2"}'
 ```
 {% endtab %}
 {% endtabs %}
