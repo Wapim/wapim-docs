@@ -83,8 +83,8 @@ axios
   .post(
     'https://api.wapim.io/api/v1/whatsapp/message/text',
     {
-      phone_number: 'Recipient Number',
-      message: 'Hello Wapim :)'
+      phone_number: 'RECIPIENT_NUMBER',
+      message: 'Hello from Wapim'
     },
     {
       headers: {
