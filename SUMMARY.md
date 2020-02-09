@@ -10,8 +10,8 @@
 
 ## Get Informations
 
-* [Device Info](get-informations/device-info.md)
-* [Contact List](get-informations/contacts.md)
+* [Device Info](informations/device-info.md)
+* [Contact List](informations/contacts.md)
 * [Profile Photos](informations/get-profile-photo.md)
 
 ## Group
@@ -25,4 +25,8 @@
 ## Websocket
 
 * [Getting Started](websocket/getting-started.md)
+
+## Others
+
+* [Generate QR Code](others/generate-qr-code.md)
 
