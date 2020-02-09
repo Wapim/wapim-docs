@@ -19,19 +19,19 @@ Authentication token.
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="phone\_number" type="string" required=true %}
-
+phonewapim
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="content\_url" type="string" required=true %}
-
+phonewapim
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="caption" type="string" required=false %}
-
+phonewapim
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="scheduled\_time" type="string" required=false %}
-
+phonewapim
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -54,6 +54,38 @@ Could not find a cake matching this query.
 
 ```
 {    "message": "Ain't no cake like that."}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="post" host="https://api.cakes.com" path="/api/v1/whatsapp/message/video" %}
+{% api-method-summary %}
+
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="phone\_number" type="string" required=true %}
+phonewapim
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+phonewapim
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
