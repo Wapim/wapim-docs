@@ -1,6 +1,6 @@
 # -Video
 
-{% api-method method="post" host="https://api.cakes.com" path="/api/v1/whatsapp/message/video" %}
+{% api-method method="post" host="https://api.wapim.io" path="/api/v1/whatsapp/message/video" %}
 {% api-method-summary %}
 Send Video Message
 {% endapi-method-summary %}
@@ -39,21 +39,14 @@ Schedule time \(Timestamp\)
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+Video successfully retrieved.
 {% endapi-method-response-example-description %}
 
 ```text
-{    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
-```text
-{    "message": "Ain't no cake like that."}
+{
+   "queue_message_id":"15417543010_B00C430369960C50285A",
+   "message":"We reached successfully"
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
