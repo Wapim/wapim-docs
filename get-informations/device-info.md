@@ -71,6 +71,8 @@ Unverifiable parameters.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Example Usages
+
 {% tabs %}
 {% tab title="Node.js" %}
 ```coffeescript
@@ -88,7 +90,7 @@ axios
 {% endtab %}
 
 {% tab title="cURL" %}
-```
+```bash
 curl \
   -X GET https://api.wapim.io/api/v1/whatsapp/profile/device \
   -H "token: YOUR_WAPIM_TOKEN"

@@ -11,7 +11,7 @@
 ## Get Informations
 
 * [Device Info](get-informations/device-info.md)
-* [Contact List](informations/contacts.md)
+* [Contact List](get-informations/contacts.md)
 * [Profile Photos](informations/get-profile-photo.md)
 
 ## Group
