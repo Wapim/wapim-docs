@@ -1,4 +1,4 @@
-# Contact List
+# Get Contact List
 
 {% api-method method="get" host="https://api.wapim.io/" path="api/v1/whatsapp/contacts" %}
 {% api-method-summary %}
@@ -27,21 +27,21 @@ Succesfully getting contacts.
 ```text
 [
   {
-    "number": "15417543010",
+    "number": "905546432300",
     "pushname": "",
-    "name": "James Smith",
+    "name": "Mr. Tarik",
     "group": false
   },
   {
-    "number": "16417543010",
-    "pushname": "Maria Garcia",
+    "number": "90505315342",
+    "pushname": "Mr. Mehmet",
     "name": "",
     "group": false
   },
   {
-    "number": "17417543010",
+    "number": "905376747564",
     "pushname": "",
-    "name": "James Johnson",
+    "name": "Mr. Kenan",
     "group": false
   },
   ...
