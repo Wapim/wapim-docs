@@ -42,7 +42,7 @@ Schedule time \(timestamp\)
 Successfully send text message.
 {% endapi-method-response-example-description %}
 
-```text
+```json
 {
 	"queue_message_id": "15417543010_997B21D0C8B90189041D",
 	"message": "We reached successfully"
@@ -56,7 +56,7 @@ Successfully send text message.
 Missing or wrong params!
 {% endapi-method-response-example-description %}
 
-```text
+```json
 {
 	"status": false,
 	"code": 400,
@@ -79,7 +79,7 @@ Missing or wrong params!
 {% tabs %}
 {% tab title="Node.js" %}
 
-```coffeescript
+```javascript
 const axios = require('axios');
 
 axios
