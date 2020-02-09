@@ -23,7 +23,7 @@ Group ID
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="participants" type="string" required=true %}
-x2
+Phone numbers to be added to the group. You can separate with commas for multiple phone numbers. (For example: 905546450000,905433468576)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
