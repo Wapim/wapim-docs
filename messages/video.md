@@ -53,6 +53,8 @@ Video successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Example Usages
+
 {% tabs %}
 {% tab title="Node.js" %}
 ```coffeescript
