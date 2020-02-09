@@ -44,8 +44,8 @@ Successfully send text message.
 
 ```text
 {
-    "queue_message_id": "15417543010_997B21D0C8B90189041D",
-    "message": "We reached successfully"
+	"queue_message_id": "15417543010_997B21D0C8B90189041D",
+	"message": "We reached successfully"
 }
 ```
 
@@ -58,14 +58,14 @@ Missing or wrong params!
 
 ```text
 {
-    "status": false,
-    "code": 400,
-    "message": "Bad Request",
-    "error": {
-        "Send Text": [
-            "Malformed or missing phone id or message data!"
-        ]
-    }
+	"status": false,
+	"code": 400,
+	"message": "Bad Request",
+	"error": {
+		"Send Text": [
+			"Malformed or missing phone id or message data!"
+		]
+	}
 }
 ```
 
@@ -84,19 +84,19 @@ const axios = require('axios');
 
 axios
   .post(
-        'https://api.wapim.io/api/v1/whatsapp/message/text',
-        {
-            phone_number: 'Recipient Number',
-            message: 'Hello Wapim :)'
-        },
-        {
-            headers: {
-                token: 'YOUR_WAPIM_TOKEN',
-            }
+    'https://api.wapim.io/api/v1/whatsapp/message/text',
+    {
+        phone_number: 'Recipient Number',
+        message: 'Hello Wapim :)'
+    },
+    {
+        headers: {
+            token: 'YOUR_WAPIM_TOKEN',
         }
-    )
-    .then(response => console.log(response.data))
-    .catch(error => console.log(error.response.data));
+    }
+	)
+	.then(response => console.log(response.data))
+	.catch(error => console.log(error.response.data));
 ```
 
 {% endtab %}
