@@ -5,8 +5,8 @@
 ## Send Messages
 
 * [Text](messages/send-text-message.md)
-* [Image](send-messages/send-image-message.md)
-* [Video](send-messages/video.md)
+* [Image](messages/send-image-message.md)
+* [Videos](send-messages/video.md)
 * [-Document](messages/send-document-message.md)
 * [Audio](send-messages/audio.md)
 * [Location](send-messages/location-message.md)

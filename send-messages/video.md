@@ -1,4 +1,4 @@
-# Video
+# Videos
 
 {% api-method method="post" host="https://api.cakes.com" path="/api/v1/whatsapp/message/video" %}
 {% api-method-summary %}
