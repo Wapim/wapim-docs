@@ -2,16 +2,16 @@
 
 * [Before you start](README.md)
 
-## Send Messages
+## Send Messages <a id="messages"></a>
 
 * [Text](messages/send-text-message.md)
 * [Image](messages/send-image-message.md)
-* [-Videos](send-messages/video.md)
+* [-Videos](messages/video.md)
 * [-Document](messages/send-document-message.md)
-* [Audio](send-messages/audio.md)
-* [Location](send-messages/location-message.md)
+* [Audio](messages/audio.md)
+* [Location](messages/location-message.md)
 
-## Get Informations
+## Get Informations <a id="informations"></a>
 
 * [Device Info](informations/device-info.md)
 * [Contact List](informations/contacts.md)
