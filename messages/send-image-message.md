@@ -2,7 +2,7 @@
 description: You can send WhatsApp image messages with this endpoint.
 ---
 
-# Send Image Message
+# Image
 
 {% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/message/image" %}
 {% api-method-summary %}
@@ -91,7 +91,7 @@ Big image file!
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Example Usages
+## Example Usages
 
 {% tabs %}
 {% tab title="Node.js" %}
@@ -99,25 +99,25 @@ Big image file!
 const axios = require('axios');
 
 axios
-	.post(
-		'https://api.wapim.io/api/v1/whatsapp/message/image',
-		{
-			phone_number: 'Recipient Number',
-			content_url: 'https://i.picsum.photos/id/859/800/600.jpg',
-			caption: 'Hello from Wapim'
-		},
-		{
-			headers: {
-				token: 'YOUR WAPIM TOKEN',
-			},
-		},
-	)
-	.then(response => {
-		console.log(response.data);
-	})
-	.catch(({ response }) => {
-		console.log(response.data);
-	});
+  .post(
+     'https://api.wapim.io/api/v1/whatsapp/message/image',
+      {
+        phone_number: 'Recipient Number',
+        content_url: 'https://i.picsum.photos/id/859/800/600.jpg',
+        caption: 'Hello from Wapim'
+      },
+      {
+        headers: {
+         token: 'YOUR WAPIM TOKEN',
+        },
+      },
+    )
+    .then(response => {
+        console.log(response.data);
+    })
+    .catch(({ response }) => {
+        console.log(response.data);
+    });
 ```
 {% endtab %}
 
