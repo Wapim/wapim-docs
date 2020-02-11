@@ -1,4 +1,4 @@
-# -Video
+# Video
 
 {% api-method method="post" host="https://api.wapim.io" path="/api/v1/whatsapp/message/video" %}
 {% api-method-summary %}
