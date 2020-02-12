@@ -4,7 +4,7 @@ description: You can send WhatsApp text messages with this endpoint.
 
 # Text
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/text" %}
+{% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/message/text" %}
 {% api-method-summary %}
 Send Text Message
 {% endapi-method-summary %}
@@ -42,7 +42,7 @@ Schedule time. \(Timestamp\)
 Successfully send text message.
 {% endapi-method-response-example-description %}
 
-```text
+```javascript
 {
     "queue_message_id": "15417543010_997B21D0C8B90189041D",
     "message": "We reached successfully"
@@ -55,7 +55,7 @@ Successfully send text message.
 Missing or wrong params!
 {% endapi-method-response-example-description %}
 
-```text
+```javascript
 {
     "status": false,
     "code": 400,
@@ -83,7 +83,7 @@ axios
   .post(
     'https://api.wapim.io/api/v1/whatsapp/message/text',
     {
-     phone_number: 'RECIPIENT_NUMBER',
+     phone_number: 'Recipient Number',
      message: 'Hello Wapim :)'
     },
     {
@@ -101,8 +101,8 @@ axios
 ```bash
 curl \
   -X POST https://api.wapim.io/api/v1/whatsapp/message/text \
-  -H "token: YOUR_WAPIM_TOKEN" \
-  -d '{"phone_number": "RECIPIENT_NUMBER", "message" : "Hello from Wapim"}'
+  -H "token: YOUR WAPIM TOKEN" \
+  -d '{"phone_number": "Recipient Number", "message" : "Hello from Wapim"}'
 ```
 {% endtab %}
 {% endtabs %}

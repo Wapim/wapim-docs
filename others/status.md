@@ -11,47 +11,50 @@ This endpoint allows you to get free cakes.
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
-ID of the cake to get, for free of course.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
 {% api-method-headers %}
 {% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token to track down who is emptying our stocks.
+Authentication token.
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
-{% api-method-query-parameters %}
-{% api-method-parameter name="recipe" type="string" %}
-The API will do its best to find a cake matching the provided recipe.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="gluten" type="boolean" %}
-Whether the cake should be gluten-free or not.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+Status successfully retrieved.
 {% endapi-method-response-example-description %}
 
 ```
-{    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
-```
-{    "message": "Ain't no cake like that."}
+{
+	"status": true,
+	"code": 200,
+	"message": {
+		"Connected": true,
+		"LoggedIn": true,
+		"Idle": false,
+		"phone_info": {
+			"Battery": 49,
+			"Platform": "iphone",
+			"Connected": true,
+			"Pushname": "John Doe",
+			"Phone_number": "15417543010@c.us",
+			"Lc": "US",
+			"Phone": {
+				"Mcc": "286",
+				"Mnc": "002",
+				"OsVersion": "12.4.4",
+				"DeviceManufacturer": "Apple",
+				"DeviceModel": "iPhone 5s",
+				"OsBuildNumber": "undefined",
+				"WaVersion": "2.20.21"
+			},
+			"Plugged": true,
+			"Tos": 0,
+			"Lg": "en",
+			"Is_24_h": true
+		}
+	}
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}

@@ -1,6 +1,6 @@
-# Contact List
+# Get Contact List
 
-{% api-method method="get" host="https://api.wapim.io/api/v1/whatsapp" path="/contacts" %}
+{% api-method method="get" host="https://api.wapim.io/" path="api/v1/whatsapp/contacts" %}
 {% api-method-summary %}
 Get Information of Device
 {% endapi-method-summary %}
@@ -27,21 +27,21 @@ Succesfully getting contacts.
 ```text
 [
   {
-    "number": "15417543010",
+    "number": "905546432300",
     "pushname": "",
-    "name": "James Smith",
+    "name": "Mr. Tarik",
     "group": false
   },
   {
-    "number": "16417543010",
-    "pushname": "Maria Garcia",
+    "number": "90505315342",
+    "pushname": "Mr. Mehmet",
     "name": "",
     "group": false
   },
   {
-    "number": "17417543010",
+    "number": "905376747564",
     "pushname": "",
-    "name": "James Johnson",
+    "name": "Mr. Kenan",
     "group": false
   },
   ...
@@ -51,33 +51,4 @@ Succesfully getting contacts.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-### Example Usages
-
-{% tabs %}
-{% tab title="Node.js" %}
-```coffeescript
-const axios = require('axios');
-
-axios
-	.get('https://api.wapim.io/api/v1/whatsapp/contacts', {
-		headers: {
-			token: 'YOUR_WAPIM_TOKEN',
-		},
-	})
-	.then(response => console.log(response.data))
-	.catch(error => console.log(error.response.data));
-```
-{% endtab %}
-
-{% tab title="cURL" %}
-```bash
-curl \
-  -X GET https://api.wapim.io/api/v1/whatsapp/contacts \
-  -H "token: YOUR_WAPIM_TOKEN"
-```
-{% endtab %}
-{% endtabs %}
-
-
 
