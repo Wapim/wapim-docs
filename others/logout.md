@@ -38,3 +38,38 @@ Persistent logout.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Example Usages
+
+{% tabs %}
+{% tab title="Node.js" %}
+```coffeescript
+const axios = require('axios');
+
+axios
+	.post(
+		'https://api.wapim.io/api/v1/whatsapp/logout',
+		{
+			persistent: true,
+		},
+		{
+			headers: {
+				token: 'YOUR_WAPIM_TOKEN',
+			},
+		},
+	)
+	.then(response => console.log(response.data))
+	.catch(error => console.log(error.response.data));
+
+```
+{% endtab %}
+
+{% tab title="cURL" %}
+```bash
+curl \
+  -X POST https://api.wapim.io/api/v1/whatsapp/logout \
+  -H "token: YOUR_WAPIM_TOKEN" \
+  -d '{"persistent":true}'
+```
+{% endtab %}
+{% endtabs %}
+
