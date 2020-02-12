@@ -58,7 +58,7 @@ axios
 		'https://api.wapim.io/api/v1/whatsapp/group/add',
 		{
 			gid: 'GROUP_ID',
-			participants: 'PARTICIPANT_NUMBER',
+			participants: 'PARTICIPANT_NUMBER1,PARTICIPANT_NUMBER2',
 		},
 		{
 			headers: {
@@ -69,6 +69,15 @@ axios
 	.then(response => console.log(response.data))
 	.catch(error => console.log(error.response.data));
 
+```
+{% endtab %}
+
+{% tab title="cURL" %}
+```bash
+curl \
+  -X POST https://api.wapim.io/api/v1/whatsapp/group/add \
+  -H "token: YOUR_WAPIM_TOKEN" \
+  -d '{"participants": "PARTICIPANT_NUMBER1,PARTICIPANT_NUMBER2", "gid":"GROUP_ID"}'
 ```
 {% endtab %}
 {% endtabs %}
