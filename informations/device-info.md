@@ -29,7 +29,7 @@ Succesfully getting device info.
     "Battery": 43,
     "Platform": "smbi",
     "Connected": true,
-    "Pushname": "WAPIM",
+    "Pushname": "John Doe",
     "Wid": "15417543010@c.us",
     "Lc": "US",
     "Phone": {
