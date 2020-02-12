@@ -8,8 +8,8 @@
 * [Image](messages/send-image-message.md)
 * [Video](messages/video.md)
 * [Document](messages/send-document-message.md)
-* [Audio](send-messages/audio.md)
-* [Location](send-messages/location-message.md)
+* [Audio](messages/audio.md)
+* [Location](messages/location-message.md)
 
 ## Get Informations <a id="informations"></a>
 
@@ -22,7 +22,7 @@
 * [Active Groups](group/active-groups.md)
 * [-Group Informations](group/group-info.md)
 * [Create New Group](group/create-group.md)
-* [-Add Participant to Group](group/add-participant-to-whatsapp-group.md)
+* [Add Participant to Group](group/add-participant-to-whatsapp-group.md)
 * [-Remove Participant from Group](group/remove-participant-from-whatsapp-group.md)
 
 ## Websocket
