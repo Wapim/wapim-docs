@@ -6,7 +6,7 @@ Status
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get free cakes.
+This endpoint allows you to get connection status.
 {% endapi-method-description %}
 
 {% api-method-spec %}
