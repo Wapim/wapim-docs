@@ -1,4 +1,4 @@
-# -Remove Participant from Group
+# Remove Participant from Group
 
 {% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/group/remove" %}
 {% api-method-summary %}
