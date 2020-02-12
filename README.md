@@ -4,9 +4,7 @@ description: >-
   WhatsApp API.
 ---
 
-# Before you start
-
-![](.gitbook/assets/comp_2.gif)
+# Before you start using API
 
 {% hint style="warning" %}
 **Attention:** To make the bot fully functional, please, always keep your phone online. Your phone should not be used for the WhatsApp Web at the same time.
