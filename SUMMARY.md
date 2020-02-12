@@ -11,6 +11,12 @@
 * [Audio](send-messages/audio.md)
 * [Location](send-messages/location-message.md)
 
+## Read Messages
+
+* [Personel](read-messages/personel.md)
+* [Group](read-messages/group.md)
+* [Last 100 Messages](read-messages/last-100-messages.md)
+
 ## Get Informations <a id="informations"></a>
 
 * [Device Info](informations/device-info.md)
