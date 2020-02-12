@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Before you start using API](README.md)
+* [Before you start](README.md)
 
 ## Send Messages <a id="messages"></a>
 
