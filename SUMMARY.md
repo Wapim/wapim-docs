@@ -7,7 +7,7 @@
 * [Text](messages/send-text-message.md)
 * [Image](messages/send-image-message.md)
 * [Video](messages/video.md)
-* [-Document](messages/send-document-message.md)
+* [Document](messages/send-document-message.md)
 * [Audio](send-messages/audio.md)
 * [Location](send-messages/location-message.md)
 

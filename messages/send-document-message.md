@@ -2,7 +2,7 @@
 description: You can send WhatsApp document messages with this endpoint.
 ---
 
-# -Document
+# Document
 
 {% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/message/document" %}
 {% api-method-summary %}
