@@ -31,7 +31,11 @@ Persistent logout.
 {% endapi-method-response-example-description %}
 
 ```
-
+{
+	"status": true,
+	"code": 200,
+	"message": "Already not connected"
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
