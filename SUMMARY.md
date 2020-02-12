@@ -37,5 +37,6 @@
 
 ## Others
 
+* [Logout](others/logout.md)
 * [Generate QR Code](others/generate-qr-code.md)
 
