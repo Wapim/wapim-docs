@@ -1,4 +1,4 @@
-# Add Participant to Group
+# -Add Participant to Group
 
 {% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/group/add" %}
 {% api-method-summary %}
@@ -23,7 +23,7 @@ Group ID
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="participants" type="string" required=true %}
-Phone numbers to be added to the group. You can separate with commas for multiple phone numbers. (For example: 905546450000,905433468576)
+Phone numbers to be added to the group. You can separate with commas for multiple phone numbers. \(For example: 905546450000,905433468576\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -45,4 +45,31 @@ Succesfully added members to group.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+### Example Usages
+
+{% tabs %}
+{% tab title="Node.js" %}
+```coffeescript
+const axios = require('axios');
+
+axios
+	.post(
+		'https://api.wapim.io/api/v1/whatsapp/group/add',
+		{
+			gid: 'GROUP_ID',
+			participants: 'PARTICIPANT_NUMBER',
+		},
+		{
+			headers: {
+				token: 'YOUR_WAPIM_TOKEN',
+			},
+		},
+	)
+	.then(response => console.log(response.data))
+	.catch(error => console.log(error.response.data));
+
+```
+{% endtab %}
+{% endtabs %}
 
