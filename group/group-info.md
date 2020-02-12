@@ -1,6 +1,6 @@
-# Get Group Information
+# -Group Informations
 
-{% api-method method="post" host="https://api.wapim.io/" path="api/v1/whatsapp/group/info" %}
+{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/group/info" %}
 {% api-method-summary %}
 Get Group Information
 {% endapi-method-summary %}
@@ -11,6 +11,12 @@ This endpoint get contacts.
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="token" type="string" required=true %}
+Authentication token.
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
 {% api-method-body-parameters %}
 {% api-method-parameter name="gid" type="string" required=true %}
 Group ID
