@@ -1,7 +1,7 @@
 ---
 description: >-
   On this page you can find what you need to know before you start using the
-  WhatsApp API.
+  Wapim WhatsApp API.
 ---
 
 # Before you start
