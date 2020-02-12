@@ -61,8 +61,10 @@ axios
 {% endtab %}
 
 {% tab title="cURL" %}
-```
-
+```bash
+curl \
+  -X GET https://api.wapim.io/api/v1/whatsapp/login \
+  -H "token: YOUR_WAPIM_TOKEN"
 ```
 {% endtab %}
 {% endtabs %}
