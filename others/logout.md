@@ -1,6 +1,6 @@
 # Logout
 
-{% api-method method="post" host="https://api.wapim.io" path="/api/v1/whatsapp/logout" %}
+{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/logout" %}
 {% api-method-summary %}
 Logout
 {% endapi-method-summary %}
