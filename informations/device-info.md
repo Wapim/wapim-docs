@@ -31,7 +31,7 @@ Succesfully getting device info.
     "Connected": true,
     "Pushname": "WAPIM",
     "Wid": "15417543010@c.us",
-    "Lc": "TR",
+    "Lc": "US",
     "Phone": {
       "Mcc": "286",
       "Mnc": "001",
