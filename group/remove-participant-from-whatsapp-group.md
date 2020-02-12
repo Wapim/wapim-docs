@@ -46,7 +46,7 @@ Succesfully removed members from group.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-#### Example Usages
+### Example Usages
 
 {% tabs %}
 {% tab title="Node.js" %}
