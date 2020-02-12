@@ -37,6 +37,7 @@
 
 ## Others
 
-* [Logout](others/logout.md)
+* [Status](others/status.md)
 * [Generate QR Code](others/generate-qr-code.md)
+* [Logout](others/logout.md)
 
