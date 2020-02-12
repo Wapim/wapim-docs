@@ -8,8 +8,8 @@
 * [Image](messages/send-image-message.md)
 * [Video](messages/video.md)
 * [Document](messages/send-document-message.md)
-* [Audio](messages/audio.md)
-* [Location](messages/location-message.md)
+* [Audio](send-messages/audio.md)
+* [Location](send-messages/location-message.md)
 
 ## Get Informations <a id="informations"></a>
 
