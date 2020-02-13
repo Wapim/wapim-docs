@@ -1,6 +1,8 @@
 # Webhook
 
-![](../.gitbook/assets/test.jpg)
+You can setup webhook configuration on [**app.wapim.io**](https://app.wapim.io).
+
+![Wapim webhook settings.](../.gitbook/assets/test.jpg)
 
 | Event | Description |
 | :--- | :--- |
