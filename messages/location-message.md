@@ -30,7 +30,7 @@ A phone number starting with the country code. US Example \(15417543010\).
 Latitude. Float data. (Example: 37.757815)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="lon" type="number" required=true %}
+{% api-method-parameter name="lon" type="float" required=true %}
 Longitude. Float data. (Example: -122.5076401)
 {% endapi-method-parameter %}
 
