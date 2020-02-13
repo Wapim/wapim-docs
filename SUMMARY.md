@@ -8,7 +8,6 @@
 * [Image](messages/send-image-message.md)
 * [Video](messages/video.md)
 * [Document](messages/send-document-message.md)
-* [Audio](messages/audio.md)
 * [Location](messages/location-message.md)
 
 ## Read Messages
