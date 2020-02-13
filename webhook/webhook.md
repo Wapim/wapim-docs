@@ -2,7 +2,7 @@
 
 You can setup webhook configuration on [**app.wapim.io**](https://app.wapim.io).
 
-![Wapim webhook settings.](../.gitbook/assets/test.jpg)
+![](../.gitbook/assets/screen-shot-2020-02-13-at-19.30.35.png)
 
 | Event | Description |
 | :--- | :--- |
