@@ -31,17 +31,13 @@
 * [Remove Participant from Group](group/remove-participant-from-whatsapp-group.md)
 * [Send Message to Group](group/send-message-to-group.md)
 
-## Websocket
-
-* [How can I connect](websocket/getting-started.md)
-
 ## Webhook
 
 * [Webhook](webhook/webhook.md)
 
-## ACK
+## Websocket
 
-* [Acknowledge](ack/acknowledge.md)
+* [How can I connect](websocket/getting-started.md)
 
 ## Others
 
