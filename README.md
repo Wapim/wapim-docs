@@ -10,6 +10,8 @@ description: >-
 
 All you need is to provide an  Wapim API token. Please [**click**](https://app.wapim.io) to create a new token.
 
+![Wapim Token](.gitbook/assets/test.jpg)
+
 ## Have you had a chance to answer the previous question?
 
 Yes, after a few months we finally found the answer. Sadly, Mike is on vacations right now so I'm afraid we are not able to provide the answer at this point.

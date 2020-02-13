@@ -1,3 +1,7 @@
+---
+description: This brings up the endpoint device information.
+---
+
 # Device Info
 
 {% api-method method="get" host="https://api.wapim.io/api/v1/whatsapp" path="/profile/device" %}
