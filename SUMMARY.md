@@ -35,13 +35,13 @@
 
 * [How can I connect](websocket/getting-started.md)
 
-## ACK
-
-* [Untitled](ack/untitled.md)
-
 ## Webhook
 
 * [Webhook](webhook/webhook.md)
+
+## ACK
+
+* [Acknowledge](ack/acknowledge.md)
 
 ## Others
 
