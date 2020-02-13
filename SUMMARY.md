@@ -35,17 +35,17 @@
 
 * [Getting Started](websocket/getting-started.md)
 
-## Others
+## ACK
 
-* [Status](others/status.md)
-* [Generate QR Code](others/generate-qr-code.md)
-* [Logout](others/logout.md)
+* [Untitled](ack/untitled.md)
 
 ## Webhook
 
 * [Webhook](webhook/webhook.md)
 
-## ACK
+## Others
 
-* [Untitled](ack/untitled.md)
+* [Status](others/status.md)
+* [Generate QR Code](others/generate-qr-code.md)
+* [Logout](others/logout.md)
 
