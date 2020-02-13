@@ -23,7 +23,7 @@ Authentication token.
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="phone\_number" type="string" required=true %}
-A phone number starting with the country code or group id. US example: "15417543010".
+A phone number starting with the country code. US example: "15417543010".
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="message" type="string" required=true %}
