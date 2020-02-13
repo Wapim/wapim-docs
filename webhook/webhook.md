@@ -6,8 +6,6 @@ description: On this page you will learn about webhook configuration.
 
 > "A webhook in web development is a method of augmenting or altering the behavior of a [web page](https://en.wikipedia.org/wiki/Web_page), or web application, with custom callbacks. These callbacks may be maintained, modified, and managed by third-party users and developers who may not necessarily be affiliated with the originating website or application." [**Wikipedia**](https://en.wikipedia.org/wiki/Webhook)
 
-
-
 You can setup webhook configuration on [**app.wapim.io**](https://app.wapim.io).  
   
 There are two things you need to do. 
