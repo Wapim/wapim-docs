@@ -84,7 +84,7 @@ axios
     'https://api.wapim.io/api/v1/whatsapp/message/text',
     {
      phone_number: 'RECIPIENT_NUMBER',
-     message: 'Hello Wapim 😍'
+     message: 'Hello Wapim :)'
     },
     {
      headers: {
@@ -102,7 +102,7 @@ axios
 curl \
   -X POST https://api.wapim.io/api/v1/whatsapp/message/text \
   -H "token: YOUR_WAPIM_TOKEN" \
-  -d '{"phone_number": "RECIPIENT_NUMBER", "message" : "Hello Wapim"}'
+  -d '{"phone_number": "RECIPIENT_NUMBER", "message" : "Hello from Wapim"}'
 ```
 {% endtab %}
 {% endtabs %}
