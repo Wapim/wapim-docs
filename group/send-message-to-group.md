@@ -1,9 +1,9 @@
 # Send Message to Group
 
-
+asd
 
 {% hint style="info" %}
-You will see the following text message example, but you can use all message endpoints in the same way.
+You will see the following text message example. But you can use all message endpoints in the same way.
 {% endhint %}
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/text" %}
@@ -85,8 +85,8 @@ axios
   .post(
     'https://api.wapim.io/api/v1/whatsapp/message/text',
     {
-     phone_number: 'RECIPIENT_NUMBER',
-     message: 'Hello Wapim 😍'
+     phone_number: 'GROUP_ID',
+     message: 'Hello Group'
     },
     {
      headers: {
@@ -104,7 +104,7 @@ axios
 curl \
   -X POST https://api.wapim.io/api/v1/whatsapp/message/text \
   -H "token: YOUR_WAPIM_TOKEN" \
-  -d '{"phone_number": "RECIPIENT_NUMBER", "message" : "Hello Wapim"}'
+  -d '{"phone_number": "GROUP_ID", "message" : "Hello Group"}'
 ```
 {% endtab %}
 {% endtabs %}
