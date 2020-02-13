@@ -5,7 +5,6 @@ description: >-
 ---
 
 # Before you start
-
 ![](.gitbook/assets/og.jpg)
 
 {% hint style="warning" %}
