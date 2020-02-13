@@ -36,7 +36,7 @@ Status successfully retrieved.
 			"Battery": 49,
 			"Platform": "iphone",
 			"Connected": true,
-			"Pushname": "John Doe",
+			"Pushname": "WAPIM",
 			"Phone_number": "15417543010@c.us",
 			"Lc": "US",
 			"Phone": {
