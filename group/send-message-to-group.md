@@ -1,7 +1,9 @@
 # Send Message to Group
 
+
+
 {% hint style="info" %}
-You can use "/text", "/image", "/video", "/document" or "/location" endpoints.
+You will see the following text message example, but you can use all message endpoints in the same way.
 {% endhint %}
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/text" %}
