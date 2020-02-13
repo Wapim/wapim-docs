@@ -8,7 +8,7 @@ You will see the following text message example, but you can use all message end
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/text" %}
 {% api-method-summary %}
-
+Message to Group
 {% endapi-method-summary %}
 
 {% api-method-description %}
