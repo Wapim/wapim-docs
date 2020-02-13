@@ -1,6 +1,6 @@
 # Webhook
 
-![](../.gitbook/assets/screen-shot-2020-02-13-at-19.21.48.png)
+![](../.gitbook/assets/test.jpg)
 
 | Event | Description |
 | :--- | :--- |
