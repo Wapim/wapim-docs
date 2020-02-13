@@ -27,11 +27,11 @@ A phone number starting with the country code. US Example \(15417543010\).
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="lat" type="float" required=true %}
-Latitude. (Example: 37.757815)
+Latitude. \(Example: 37.757815\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="lon" type="float" required=true %}
-Longitude. (Example: -122.5076401)
+Longitude. \(Example: -122.5076401\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="title" type="string" required=false %}
@@ -50,10 +50,9 @@ Scheduled time. \(Timestamp\)
 Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
-```
+```text
 {    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
 ```
-
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=404 %}
@@ -61,11 +60,49 @@ Cake successfully retrieved.
 Could not find a cake matching this query.
 {% endapi-method-response-example-description %}
 
-```
+```text
 {    "message": "Ain't no cake like that."}
 ```
-
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+### Example Usages
+
+{% tabs %}
+{% tab title="Node.js" %}
+```coffeescript
+const axios = require('axios');
+
+axios
+	.post(
+		'https://api.wapim.io/api/v1/whatsapp/message/location',
+		{
+			phone_number: 'RECIPIENT_NUMBER',
+			lat: 37.757815,
+			lon: -122.5076401,
+			title: 'My Location',
+		},
+		{
+			headers: {
+				token: 'YOUR_WAPIM_TOKEN',
+			},
+		},
+	)
+	.then(response => console.log(response.data))
+	.catch(error => console.log(error.response.data));
+
+```
+{% endtab %}
+
+{% tab title="cURL" %}
+```bash
+curl \
+  -X POST https://api.wapim.io/api/v1/whatsapp/message/location \
+  -H "token: YOUR_WAPIM_TOKEN" \
+  -d '{"phone_number": "RECIPIENT_NUMBER", "lat": 37.757815, "lon": -122.5076401, "title": "My Location"}'
+```
+{% endtab %}
+{% endtabs %}
+
