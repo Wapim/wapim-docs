@@ -37,7 +37,7 @@
 
 ## Websocket
 
-* [How can I connect](websocket/getting-started.md)
+* [How can I connect websocket](websocket/connect-websocket.md)
 
 ## Others
 
