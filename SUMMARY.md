@@ -33,7 +33,7 @@
 
 ## Websocket
 
-* [Getting Started](websocket/getting-started.md)
+* [How can I connect](websocket/getting-started.md)
 
 ## ACK
 
