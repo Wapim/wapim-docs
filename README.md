@@ -14,3 +14,7 @@ description: >-
 
 
 
+### Rate Limits
+
+You can send 10 messages per minute.
+

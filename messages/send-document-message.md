@@ -30,10 +30,6 @@ A phone number starting with the country code. US Example \(15417543010\).
 Content URL
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="caption" type="string" required=false %}
-Text under the document.
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="scheduled\_time" type="string" required=false %}
 Scheduled time. \(Timestamp\)
 {% endapi-method-parameter %}
@@ -91,7 +87,7 @@ Big document file!
 {% endapi-method-spec %}
 {% endapi-method %}
 
-#### Example Usages
+### Example Usages
 
 {% tabs %}
 {% tab title="Node.js" %}
