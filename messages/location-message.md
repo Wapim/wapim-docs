@@ -23,23 +23,23 @@ Authentication token.
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="phone\_number" type="string" required=true %}
-
+phone number
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="lat" type="number" required=true %}
-
+lat
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="lon" type="number" required=true %}
-
+lon
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="title" type="string" required=false %}
-
+title
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="scheduled\_time" type="string" required=false %}
-
+schedule time
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
