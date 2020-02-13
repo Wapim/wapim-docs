@@ -4,7 +4,7 @@ description: You can send WhatsApp location messages with this endpoint.
 
 # Location
 
-{% api-method method="get" host="https://api.wapim.io/api/v1/whatsapp" path="/message/location" %}
+{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/location" %}
 {% api-method-summary %}
 Send Location
 {% endapi-method-summary %}
