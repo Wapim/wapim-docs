@@ -10,7 +10,7 @@ description: >-
 
 All you need is to provide an  Wapim API key. Please [**click**](https://app.wapim.io) to create a new API key.
 
-![Wapim Token](.gitbook/assets/test.jpg)
+![Wapim API Key](.gitbook/assets/test.jpg)
 
 ## Have you had a chance to answer the previous question?
 
