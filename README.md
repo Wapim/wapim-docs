@@ -12,9 +12,13 @@ All you need is to provide an  Wapim API key. Please [**click**](https://app.wap
 
 ![Wapim API Key](.gitbook/assets/wapim-api-key.jpg)
 
-## Please read QR Code
+## Please read the QR Code
 
-Test 
+You will see a QR code on the Wapim instance screen. Please read the QR code with WhatsApp.
+
+1. Open WhatsApp on your phone.
+2. Tap **Menu** or **Settings** and select **WhatsApp Web.**
+3. Point your phone to this screen to capture the code.
 
 ## Can I use this API while offline?
 
