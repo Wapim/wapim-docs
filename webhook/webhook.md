@@ -4,7 +4,10 @@ description: On this page you will learn about webhook configuration.
 
 # Webhook
 
-You can setup webhook configuration on [**app.wapim.io**](https://app.wapim.io).
+There are two things you need to do.
+
+1. Define POST URL for Webhooks.You can setup webhook configuration on [**app.wapim.io**](https://app.wapim.io).
+2. Choose what you want to be informed about.
 
 ![Wapim webhook settings](../.gitbook/assets/wapim-webhook-settings.jpg)
 
