@@ -26,12 +26,12 @@ Authentication token.
 A phone number starting with the country code. US Example \(15417543010\).
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="lat" type="number" required=true %}
-Latitude. Float data. (Example: 37.757815)
+{% api-method-parameter name="lat" type="float" required=true %}
+Latitude. (Example: 37.757815)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="lon" type="float" required=true %}
-Longitude. Float data. (Example: -122.5076401)
+Longitude. (Example: -122.5076401)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="title" type="string" required=false %}
