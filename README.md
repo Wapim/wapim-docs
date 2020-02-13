@@ -12,7 +12,11 @@ All you need is to provide an  Wapim API key. Please [**click**](https://app.wap
 
 ![](.gitbook/assets/wapim-api-key.jpg)
 
-{% hint style="warning" %}
-**Attention:** To make the bot fully functional, please, always keep your phone online. Your phone should not be used for the WhatsApp Web at the same time.
-{% endhint %}
+## Can I use this API while offline?
+
+No. To make the bot fully functional, please, always keep your phone online.
+
+## Can I use WhatsApp Web and Wapim API at the same time?
+
+Your phone should not be used for the WhatsApp Web at the same time.
 
