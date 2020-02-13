@@ -10,7 +10,11 @@ description: >-
 
 All you need is to provide an  Wapim API key. Please [**click**](https://app.wapim.io) to create a new API key.
 
-![](.gitbook/assets/wapim-api-key.jpg)
+![Wapim API Key](.gitbook/assets/wapim-api-key.jpg)
+
+## Please read QR Code
+
+Test 
 
 ## Can I use this API while offline?
 
