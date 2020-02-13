@@ -10,7 +10,7 @@ Send Image Message
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint send an image message.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -91,7 +91,7 @@ Big image file!
 {% endapi-method-spec %}
 {% endapi-method %}
 
-## Example Usages
+### Example Usages
 
 {% tabs %}
 {% tab title="Node.js" %}

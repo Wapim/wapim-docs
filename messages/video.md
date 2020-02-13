@@ -1,3 +1,7 @@
+---
+description: You can send WhatsApp video messages with this endpoint.
+---
+
 # Video
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/video" %}
@@ -6,7 +10,7 @@ Send Video Message
 {% endapi-method-summary %}
 
 {% api-method-description %}
-You can send video message with this endpoint.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}

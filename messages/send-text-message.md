@@ -10,7 +10,7 @@ Send Text Message
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint send a text message.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
