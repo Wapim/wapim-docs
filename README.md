@@ -8,7 +8,7 @@ description: >-
 
 ## What do I need to use the API?
 
-All you need is to provide an  Wapim API token. You can provide a new token [here](https://app.wapim.io).
+All you need is to provide an  Wapim API token. You can provide a new token [**here**](https://app.wapim.io).
 
 ## Have you had a chance to answer the previous question?
 
