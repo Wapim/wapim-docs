@@ -10,11 +10,7 @@ description: >-
 
 All you need is to provide an  Wapim API key. Please [**click**](https://app.wapim.io) to create a new API key.
 
-![Wapim API Key](.gitbook/assets/test.jpg)
-
-## Have you had a chance to answer the previous question?
-
-Yes, after a few months we finally found the answer. Sadly, Mike is on vacations right now so I'm afraid we are not able to provide the answer at this point.
+![](.gitbook/assets/wapim-api-key.jpg)
 
 {% hint style="warning" %}
 **Attention:** To make the bot fully functional, please, always keep your phone online. Your phone should not be used for the WhatsApp Web at the same time.
