@@ -1,14 +1,12 @@
 # Send Message to Group
 
-asd
-
 {% hint style="info" %}
 You will see the following text message example. But you can use all message endpoints in the same way.
 {% endhint %}
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/text" %}
 {% api-method-summary %}
-Message to Group
+Send Message to Group
 {% endapi-method-summary %}
 
 {% api-method-description %}
