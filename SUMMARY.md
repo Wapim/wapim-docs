@@ -29,6 +29,7 @@
 * [Create New Group](group/create-group.md)
 * [Add Participant to Group](group/add-participant-to-whatsapp-group.md)
 * [Remove Participant from Group](group/remove-participant-from-whatsapp-group.md)
+* [Send Message to Group](group/send-message-to-group.md)
 
 ## Websocket
 
