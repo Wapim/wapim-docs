@@ -27,7 +27,7 @@ A phone number starting with the country code. US example: "15417543010".
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="message" type="string" required=true %}
-Content of text message
+Content of text message.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="scheduled\_time" type="string" required=false %}

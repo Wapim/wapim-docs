@@ -2,7 +2,7 @@
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/text" %}
 {% api-method-summary %}
-Send Text Message
+
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -19,11 +19,11 @@ Authentication token.
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="phone\_number" type="string" required=true %}
-A phone number starting with the country code. US example: "15417543010".
+gid \(group id\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="message" type="string" required=true %}
-Content of text message
+Content of text message.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="scheduled\_time" type="string" required=false %}
@@ -44,7 +44,6 @@ Successfully send text message.
     "message": "We reached successfully"
 }
 ```
-
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
@@ -64,17 +63,15 @@ Missing or wrong params!
     }
 }
 ```
-
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Example Usages
+## Example Usages
 
 {% tabs %}
 {% tab title="Node.js" %}
-
 ```coffeescript
 const axios = require('axios');
 
@@ -94,17 +91,15 @@ axios
   .then(response => console.log(response.data))
   .catch(error => console.log(error.response.data));
 ```
-
 {% endtab %}
 
 {% tab title="cURL" %}
-
 ```bash
 curl \
   -X POST https://api.wapim.io/api/v1/whatsapp/message/text \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"phone_number": "RECIPIENT_NUMBER", "message" : "Hello Wapim"}'
 ```
-
 {% endtab %}
 {% endtabs %}
+
