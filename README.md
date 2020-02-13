@@ -22,7 +22,7 @@ You will see a QR code on the Wapim instance screen. Please read the QR code wit
 
 ## Can I use this API while offline?
 
-No. To make the bot fully functional, please, always keep your phone online.
+No. To make the API fully functional, please, always keep your phone online.
 
 ## Can I use WhatsApp Web and Wapim API at the same time?
 
