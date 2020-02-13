@@ -2,61 +2,109 @@
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/text" %}
 {% api-method-summary %}
-
+Send Text Message
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get free cakes.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
-ID of the cake to get, for free of course.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
 {% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token to track down who is emptying our stocks.
+{% api-method-parameter name="token" type="string" required=true %}
+Authentication token.
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="recipe" type="string" %}
-The API will do its best to find a cake matching the provided recipe.
+{% api-method-body-parameters %}
+{% api-method-parameter name="phone\_number" type="string" required=true %}
+A phone number starting with the country code. US example: "15417543010".
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="gluten" type="boolean" %}
-Whether the cake should be gluten-free or not.
+{% api-method-parameter name="message" type="string" required=true %}
+Content of text message
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+
+{% api-method-parameter name="scheduled\_time" type="string" required=false %}
+Schedule time. \(Timestamp\)
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+Successfully send text message.
 {% endapi-method-response-example-description %}
 
+```text
+{
+    "queue_message_id": "15417543010_997B21D0C8B90189041D",
+    "message": "We reached successfully"
+}
 ```
-{    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
-```
+
 {% endapi-method-response-example %}
 
-{% api-method-response-example httpCode=404 %}
+{% api-method-response-example httpCode=400 %}
 {% api-method-response-example-description %}
-Could not find a cake matching this query.
+Missing or wrong params!
 {% endapi-method-response-example-description %}
 
+```text
+{
+    "status": false,
+    "code": 400,
+    "message": "Bad Request",
+    "error": {
+        "Send Text": [
+            "Malformed or missing phone id or message data!"
+        ]
+    }
+}
 ```
-{    "message": "Ain't no cake like that."}
-```
+
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Example Usages
 
+{% tabs %}
+{% tab title="Node.js" %}
 
+```coffeescript
+const axios = require('axios');
+
+axios
+  .post(
+    'https://api.wapim.io/api/v1/whatsapp/message/text',
+    {
+     phone_number: 'RECIPIENT_NUMBER',
+     message: 'Hello Wapim 😍'
+    },
+    {
+     headers: {
+      token: 'YOUR_WAPIM_TOKEN',
+     }
+    }
+  )
+  .then(response => console.log(response.data))
+  .catch(error => console.log(error.response.data));
+```
+
+{% endtab %}
+
+{% tab title="cURL" %}
+
+```bash
+curl \
+  -X POST https://api.wapim.io/api/v1/whatsapp/message/text \
+  -H "token: YOUR_WAPIM_TOKEN" \
+  -d '{"phone_number": "RECIPIENT_NUMBER", "message" : "Hello Wapim"}'
+```
+
+{% endtab %}
+{% endtabs %}
