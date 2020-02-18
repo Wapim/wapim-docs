@@ -16,6 +16,8 @@ Make sure to enable WebSocket in the webhook settings on the [**Wapim Console**]
 
 ![Wapim Console webhook settings](../.gitbook/assets/wapim-whatsapp-websocket-options.png)
 
+Aşağıda çok basit bir HTML dökümanı hazırlıyoruz. WebSocket bağlantısı açıldığında, yeni bir mesaj alındığında, bağlantı kapandığında ve hata durumları için birer event oluşturuyoruz.
+
 ```markup
 <html>
 	<body>
