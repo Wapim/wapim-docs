@@ -1,16 +1,12 @@
----
-description: This endpoint brings up your contact list.
----
-
 # Contact List
 
 {% api-method method="get" host="https://api.wapim.io/api/v1/whatsapp" path="/contacts" %}
 {% api-method-summary %}
-Get Contact List
+Get Information of Device
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+This endpoint get contacts.
 {% endapi-method-description %}
 
 {% api-method-spec %}
