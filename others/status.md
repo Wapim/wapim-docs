@@ -1,4 +1,8 @@
-# Status
+---
+description: This endpoint allows you to get connection status.
+---
+
+# Connection Status
 
 {% api-method method="get" host="https://api.wapim.io/api/v1/whatsapp" path="/status" %}
 {% api-method-summary %}
@@ -6,7 +10,7 @@ Status
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get connection status.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
