@@ -11,7 +11,7 @@
 * [Document](messages/send-document-message.md)
 * [Location](messages/location-message.md)
 * [Link](messages/link.md)
-* [Contact](messages/contact.md)
+* [-Contact](messages/contact.md)
 
 ## Read Messages
 
