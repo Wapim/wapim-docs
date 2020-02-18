@@ -1,3 +1,7 @@
+---
+description: This endpoint brings up all the details relevant to the group.
+---
+
 # Group Informations
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/group/info" %}

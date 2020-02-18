@@ -1,16 +1,12 @@
----
-description: With this endpoint you can create a new WhatsApp group.
----
-
 # Create New Group
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/group/create" %}
 {% api-method-summary %}
-Create a new WhatsApp Group
+Create a new WhatsApp group
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+This endpoint creates a new WhatsApp group.
 {% endapi-method-description %}
 
 {% api-method-spec %}
