@@ -1,5 +1,5 @@
 ---
-description: You can send messages to the group.
+description: You can send messages to the groups with send message endpoints.
 ---
 
 # Send Message to Group
