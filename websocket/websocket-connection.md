@@ -5,7 +5,7 @@ description: You will learn about connection to Wapim websocket.
 # Websocket Connection
 
 {% hint style="info" %}
-You can use only **Platinum** plan.
+You can use only with **Platinum** plan.
 {% endhint %}
 
 ```markup
