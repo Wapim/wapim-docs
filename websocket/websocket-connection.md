@@ -1,5 +1,5 @@
 ---
-description: You will learn about connection to Wapim WebSocket.
+description: You will learn about Wapim WebSocket on this page.
 ---
 
 # WebSocket
@@ -53,4 +53,8 @@ Aşağıda çok basit bir HTML dökümanı hazırlıyoruz. WebSocket bağlantıs
 	</script>
 </html>
 ```
+
+### What situations do I get notified about?
+
+
 
