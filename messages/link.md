@@ -33,6 +33,10 @@ Link of website.
 {% api-method-parameter name="title" type="string" required=false %}
 Link title.
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="description" type="string" required=false %}
+Link description.
+{% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -48,6 +52,7 @@ Successfully send text message.
     "message": "We reached successfully"
 }
 ```
+
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
@@ -67,6 +72,7 @@ Missing or wrong params!
     }
 }
 ```
+
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -76,6 +82,7 @@ Missing or wrong params!
 
 {% tabs %}
 {% tab title="Node.js" %}
+
 ```coffeescript
 const axios = require('axios');
 
@@ -97,15 +104,17 @@ axios
 	.then(response => console.log(response.data))
 	.catch(error => console.log(error.response.data));
 ```
+
 {% endtab %}
 
 {% tab title="cURL" %}
+
 ```bash
 curl \
   -X POST https://api.wapim.io/api/v1/whatsapp/message/link \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"phone_number": "RECIPIENT_NUMBER", "url": "https://wapim.io", "title": "WAPIM", "description": "Super fast WhatsApp API!"}'
 ```
+
 {% endtab %}
 {% endtabs %}
-
