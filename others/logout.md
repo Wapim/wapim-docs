@@ -1,7 +1,3 @@
----
-description: You can log out with this endpoint.
----
-
 # Logout
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/logout" %}
