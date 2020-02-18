@@ -1,3 +1,7 @@
+---
+description: 'With this endpoint, you can remove users from the group.'
+---
+
 # Remove Participant from Group
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/group/remove" %}
@@ -6,7 +10,7 @@ Remove participant from group
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint remove participant from WhatsApp group.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -23,7 +27,7 @@ Group ID
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="participants" type="string" required=true %}
-Phone numbers to be discarded from the group. You can separate with commas for multiple phone numbers. \(For example: 905546450000,905433468576\)
+Phone numbers to be removed from the group. You can separate with commas for multiple phone numbers. \(For example: 905546450000,905433468576\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
