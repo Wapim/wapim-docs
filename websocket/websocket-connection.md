@@ -4,6 +4,8 @@ description: You will learn about connection to Wapim WebSocket.
 
 # WebSocket Connection
 
+
+
 {% hint style="info" %}
 You can use it only with **Platinum** plan.
 {% endhint %}
