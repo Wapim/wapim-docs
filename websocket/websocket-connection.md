@@ -14,7 +14,7 @@ You can use it only with **Platinum** plan.
 Make sure to enable Websocket in the Webhook settings on the [**Wapim Console**](https://app.wapim.io).
 {% endhint %}
 
-![Wapim console webhook settings](../.gitbook/assets/wapim-whatsapp-websocket-options.png)
+![Wapim Console webhook settings](../.gitbook/assets/wapim-whatsapp-websocket-options.png)
 
 ```markup
 <html>
