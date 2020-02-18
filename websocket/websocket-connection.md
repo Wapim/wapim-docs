@@ -56,7 +56,7 @@ Aşağıda çok basit bir HTML dökümanı hazırlıyoruz. WebSocket bağlantıs
 
 ### What situations do I get notified about?
 
-You can learn about on [**Webhook page**](https://docs.wapim.io/webhook/webhook).
+You can learn about this on [**Webhook page**](https://docs.wapim.io/webhook/webhook).
 
 
 
