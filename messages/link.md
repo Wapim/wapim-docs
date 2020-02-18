@@ -52,7 +52,6 @@ Successfully send text message.
     "message": "We reached successfully"
 }
 ```
-
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
@@ -72,49 +71,45 @@ Missing or wrong params!
     }
 }
 ```
-
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Example Usages
+## Example Usages
 
 {% tabs %}
 {% tab title="Node.js" %}
-
 ```coffeescript
 const axios = require('axios');
 
 axios
-	.post(
-		'https://api.wapim.io/api/v1/whatsapp/message/link',
-		{
-			phone_number: 'RECIPIENT_NUMBER',
-			url: 'https://wapim.io',
-			title: 'WAPIM',
-			description: 'Super fast WhatsApp API!',
-		},
-		{
-			headers: {
-				token: 'YOUR_WAPIM_TOKEN',
-			},
-		},
-	)
-	.then(response => console.log(response.data))
-	.catch(error => console.log(error.response.data));
+ .post(
+    'https://api.wapim.io/api/v1/whatsapp/message/link',
+    {
+      phone_number: 'RECIPIENT_NUMBER',
+      url: 'https://wapim.io',
+      title: 'WAPIM',
+      description: 'Super fast WhatsApp API!',
+    },
+    {
+      headers: {
+        token: 'YOUR_WAPIM_TOKEN',
+      },
+    },
+  )
+  .then(response => console.log(response.data))
+  .catch(error => console.log(error.response.data));
 ```
-
 {% endtab %}
 
 {% tab title="cURL" %}
-
 ```bash
 curl \
   -X POST https://api.wapim.io/api/v1/whatsapp/message/link \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"phone_number": "RECIPIENT_NUMBER", "url": "https://wapim.io", "title": "WAPIM", "description": "Super fast WhatsApp API!"}'
 ```
-
 {% endtab %}
 {% endtabs %}
+
