@@ -9,7 +9,7 @@ You can use it only with **Platinum** plan.
 {% endhint %}
 
 {% hint style="warning" %}
-Make sure to enable Websocket in the Webhook settings on the [**Wapim Console**](https://app.wapim.io).
+Make sure to enable WebSocket in the Webhook settings on the [**Wapim Console**](https://app.wapim.io).
 {% endhint %}
 
 ![Wapim Console webhook settings](../.gitbook/assets/wapim-whatsapp-websocket-options.png)
