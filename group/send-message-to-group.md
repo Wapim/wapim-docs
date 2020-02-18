@@ -1,3 +1,7 @@
+---
+description: You can send messages to the group.
+---
+
 # Send Message to Group
 
 {% hint style="info" %}

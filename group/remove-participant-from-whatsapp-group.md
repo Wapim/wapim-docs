@@ -1,5 +1,5 @@
 ---
-description: 'With this endpoint, you can remove users from the group.'
+description: You can remove users from the group with this endpoint.
 ---
 
 # Remove Participant from Group
