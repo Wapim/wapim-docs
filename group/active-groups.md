@@ -24,21 +24,17 @@ Authentication token.
 Succesfully getting active groups.
 {% endapi-method-response-example-description %}
 
-```bash
-{
-	"status": true,
-	"code": 200,
-	"message": [
-		{
-			"gid": "15417543010-1570918620",
-			"group_name": "Group Name 1"
-		},
-		{
-			"gid": "16417543010-1578236320",
-			"group_name": "Group Name 2"
-		}
-	]
-}
+```text
+  {
+    "status": true,
+    "code": 200,
+    "message": {
+      "Active Groups": {
+        "15417543010-1560716540": "Wapim.io",
+        "15417543011-1563579554": "Another Group"
+      }
+    }
+  }
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
