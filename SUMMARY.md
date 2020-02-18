@@ -9,6 +9,7 @@
 * [Video](messages/video.md)
 * [Document](messages/send-document-message.md)
 * [Location](messages/location-message.md)
+* [Link](messages/link.md)
 
 ## Read Messages
 

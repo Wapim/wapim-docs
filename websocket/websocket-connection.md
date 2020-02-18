@@ -4,7 +4,7 @@ description: You will learn about Wapim WebSocket on this page.
 
 # WebSocket
 
-WhatsApp API üzerinde real-time çalışmak istediğinizde Wapim size bir WebSocket bağlantısı sunar. Böylelikle hiçbir ek geliştirmeye gerek kalmadan WhatsApp hesabınız üzerindeki tüm güncellemeleri gerçek zamanlı olarak ekranlarınızda gösterebilirsiniz.
+When you want to work real-time on the WhatsApp API, Wapim offers you a WebSocket connection.In this way, you can show all the updates on your WhatsApp account on your screens in real time without any additional development.
 
 {% hint style="info" %}
 You can use this feature only with **Platinum** plan.
