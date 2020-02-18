@@ -14,8 +14,7 @@
 
 ## Read Messages
 
-* [Personel](read-messages/personel.md)
-* [Group](read-messages/group.md)
+* [Chat Messages](read-messages/personel.md)
 * [Last 100 Messages](read-messages/last-100-messages.md)
 
 ## Get Informations <a id="informations"></a>

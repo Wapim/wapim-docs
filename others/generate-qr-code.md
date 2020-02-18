@@ -1,8 +1,12 @@
+---
+description: You can generate WhatsApp QR code with this endpoint.
+---
+
 # Generate QR Code
 
 {% api-method method="get" host="https://api.wapim.io/api/v1/whatsapp" path="/login" %}
 {% api-method-summary %}
-Generate QR Code
+Get WhatsApp QR Code for Login
 {% endapi-method-summary %}
 
 {% api-method-description %}

@@ -1,3 +1,7 @@
+---
+description: You can add new participants to the group with this endpoint.
+---
+
 # Add Participant to Group
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/group/add" %}
@@ -6,7 +10,7 @@ Add participant to group
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint add participant to WhatsApp group.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
