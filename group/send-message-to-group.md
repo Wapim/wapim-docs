@@ -4,6 +4,8 @@ description: You can send messages to the group.
 
 # Send Message to Group
 
+
+
 {% hint style="info" %}
 You will see the following text message example. But you can use all message endpoints in the same way.
 {% endhint %}
