@@ -4,9 +4,17 @@ description: You will learn about connection to Wapim websocket.
 
 # Websocket Connection
 
+
+
 {% hint style="info" %}
-Only platinium plan.
+You can use it only with **Platinum** plan.
 {% endhint %}
+
+{% hint style="warning" %}
+Make sure to enable Websocket in the Webhook settings on the [**Wapim Console**](https://app.wapim.io).
+{% endhint %}
+
+![Wapim console webhook settings](../.gitbook/assets/wapim-whatsapp-websocket-options.png)
 
 ```markup
 <html>
