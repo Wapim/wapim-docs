@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Before you start](README.md)
-* [Important Warnings](important-warnings.md)
+* [-Important Warnings](important-warnings.md)
 
 ## Send Messages <a id="messages"></a>
 
