@@ -1,8 +1,8 @@
----
-description: You can send WhatsApp link messages with this endpoint.
+# Link
+
 ---
 
-# Link
+## description: You can send WhatsApp link messages with this endpoint.
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/link" %}
 {% api-method-summary %}
@@ -26,12 +26,12 @@ Authentication token.
 A phone number starting with the country code. US example: "15417543010".
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="url" type="string" required=true %}
-Link of website.
+{% api-method-parameter name="message" type="string" required=true %}
+Content of text message.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="description" type="string" required=false %}
-Link description.
+{% api-method-parameter name="scheduled\_time" type="string" required=false %}
+Schedule time. \(Timestamp\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -48,6 +48,7 @@ Successfully send text message.
     "message": "We reached successfully"
 }
 ```
+
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
@@ -67,6 +68,7 @@ Missing or wrong params!
     }
 }
 ```
+
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -76,36 +78,37 @@ Missing or wrong params!
 
 {% tabs %}
 {% tab title="Node.js" %}
+
 ```coffeescript
 const axios = require('axios');
 
 axios
-	.post(
-		'https://api.wapim.io/api/v1/whatsapp/message/link',
-		{
-			phone_number: 'RECIPIENT_NUMBER',
-			url: 'https://wapim.io',
-			title: 'WAPIM',
-			description: 'Super fast WhatsApp API!',
-		},
-		{
-			headers: {
-				token: 'YOUR_WAPIM_TOKEN',
-			},
-		},
-	)
-	.then(response => console.log(response.data))
-	.catch(error => console.log(error.response.data));
+  .post(
+    'https://api.wapim.io/api/v1/whatsapp/message/text',
+    {
+     phone_number: 'RECIPIENT_NUMBER',
+     message: 'Hello Wapim 😍'
+    },
+    {
+     headers: {
+      token: 'YOUR_WAPIM_TOKEN',
+     }
+    }
+  )
+  .then(response => console.log(response.data))
+  .catch(error => console.log(error.response.data));
 ```
+
 {% endtab %}
 
 {% tab title="cURL" %}
+
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/message/link \
+  -X POST https://api.wapim.io/api/v1/whatsapp/message/text \
   -H "token: YOUR_WAPIM_TOKEN" \
-  -d '{"phone_number": "RECIPIENT_NUMBER", "url": "https://wapim.io", "title": "WAPIM", "description": "Super fast WhatsApp API!"}'
+  -d '{"phone_number": "RECIPIENT_NUMBER", "message" : "Hello Wapim"}'
 ```
+
 {% endtab %}
 {% endtabs %}
-
