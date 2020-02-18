@@ -1,10 +1,8 @@
 ---
-description: You will learn about connection to Wapim websocket.
+description: You will learn about connection to Wapim WebSocket.
 ---
 
-# Websocket Connection
-
-
+# WebSocket Connection
 
 {% hint style="info" %}
 You can use it only with **Platinum** plan.

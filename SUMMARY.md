@@ -37,7 +37,7 @@
 
 ## Websocket
 
-* [Websocket Connection](websocket/websocket-connection.md)
+* [WebSocket Connection](websocket/websocket-connection.md)
 
 ## Others
 
