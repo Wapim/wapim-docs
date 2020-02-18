@@ -18,7 +18,7 @@ Make sure to enable WebSocket in the webhook settings on the [**Wapim Console**]
 
 ### Example Connection
 
-Aşağıda çok basit bir HTML dökümanı hazırlıyoruz. WebSocket bağlantısı açıldığında, yeni bir mesaj alındığında, bağlantı kapandığında ve hata durumları için birer event oluşturuyoruz.
+We are preparing a very simple HTML document below. We create an event when the WebSocket connection is opened, a new message is received, the connection is closed, and for error cases.
 
 ```markup
 <html>
