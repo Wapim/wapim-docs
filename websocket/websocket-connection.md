@@ -4,14 +4,14 @@ description: You will learn about connection to Wapim WebSocket.
 
 # WebSocket Connection
 
-
+WhatsApp API üzerinde real-time çalışmak istediğinizde Wapim size bir WebSocket bağlantısı sunar. Böylelikle hiçbir ek geliştirmeye gerek kalmadan WhatsApp hesabınız üzerindeki tüm güncellemeleri gerçek zamanlı olarak ekranlarınızda gösterebilirsiniz.
 
 {% hint style="info" %}
-You can use it only with **Platinum** plan.
+You can use this feature only with **Platinum** plan.
 {% endhint %}
 
 {% hint style="warning" %}
-Make sure to enable WebSocket in the Webhook settings on the [**Wapim Console**](https://app.wapim.io).
+Make sure to enable WebSocket in the webhook settings on the [**Wapim Console**](https://app.wapim.io).
 {% endhint %}
 
 ![Wapim Console webhook settings](../.gitbook/assets/wapim-whatsapp-websocket-options.png)
