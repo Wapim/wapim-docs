@@ -1,4 +1,4 @@
-# -Group Informations
+# Group Informations
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/group/info" %}
 {% api-method-summary %}
