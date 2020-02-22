@@ -34,7 +34,7 @@ Contact name.
 Contact number.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="scheduled\_time" type="string" required=false %}
+{% api-method-parameter name="scheduled\_time" type="number" required=false %}
 Scheduled time. \(Timestamp\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}

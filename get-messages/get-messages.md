@@ -61,13 +61,33 @@ Succesfully getting device info.
 {% tabs %}
 {% tab title="Node.js" %}
 ```coffeescript
+const axios = require('axios');
+
+axios
+	.post(
+		'https://api.wapim.io/api/v1/whatsapp/chat',
+		{
+			phone_number: 'PHONE_NUMBER_OR_GROUP_ID',
+			count: 10,
+		},
+		{
+			headers: {
+				token: 'YOUR_WAPIM_TOKEN',
+			},
+		},
+	)
+	.then(response => console.log(response.data))
+	.catch(error => console.log(error.response.data));
 
 ```
 {% endtab %}
 
 {% tab title="cURL" %}
 ```bash
-
+curl \
+  -X POST https://api.wapim.io/api/v1/whatsapp/chat \
+  -H "token: YOUR_WAPIM_TOKEN" \
+  -d '{"phone_number": "PHONE_NUMBER_OR_GROUP_ID", "count": 10}'
 ```
 {% endtab %}
 {% endtabs %}
