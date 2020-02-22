@@ -48,7 +48,7 @@ Successfully send image message.
 
 ```text
 {
-    "queue_message_id": "905546453474_997B21D0C8B90189041D",
+    "queue_message_id": "15417543010_997B21D0C8B90189041D",
     "message": "We reached successfully"
 }
 ```
@@ -91,7 +91,7 @@ Big image file!
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Example Usages
+## Example Usages
 
 {% tabs %}
 {% tab title="Node.js" %}
@@ -126,3 +126,4 @@ curl \
 ```
 {% endtab %}
 {% endtabs %}
+
