@@ -46,3 +46,8 @@
 * [Generate QR Code](others/generate-qr-code.md)
 * [Logout](others/logout.md)
 
+## Queue
+
+* [Delete Messages](queue/delete-messages.md)
+* [Count](queue/count.md)
+
