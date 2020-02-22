@@ -4,7 +4,7 @@
 
 ## Send Messages <a id="messages"></a>
 
-* [Text](messages/text.md)
+* [Text](messages/send-text-message.md)
 * [Image](messages/image.md)
 * [Video](messages/video.md)
 * [Document](messages/document.md)
