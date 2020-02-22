@@ -60,17 +60,6 @@ Succesfully getting chat history.
          "text":"How are you?",
          "timestamp":1582288581,
          "to_phone_number":"15417543010"
-      },
-      {
-         "event_name":"TextMessage",
-         "from_group":false,
-         "from_me":false,
-         "from_phone_number":"16417543016",
-         "instance_id":"ck6w8bq3n05hg07995ztv1a33",
-         "message_id":"3A06FC2CCEC0E2122006",
-         "text":"Fine. You?",
-         "timestamp":1582291178,
-         "to_phone_number":"15417543010"
       }
    ]
 }
