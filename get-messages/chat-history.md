@@ -35,7 +35,7 @@ How many messages. \(Default: 10\)
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Succesfully getting chat history.
+Successfully getting chat history.
 {% endapi-method-response-example-description %}
 
 ```text

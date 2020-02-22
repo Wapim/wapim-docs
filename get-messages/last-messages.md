@@ -31,7 +31,7 @@ How many messages. \(Default: 10\)
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Succesfully getting last messages.
+Successfully getting last messages.
 {% endapi-method-response-example-description %}
 
 ```text
