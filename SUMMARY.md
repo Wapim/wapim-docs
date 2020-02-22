@@ -15,6 +15,7 @@
 ## Get Messages
 
 * [Chat History](get-messages/chat-history.md)
+* [Last Messages](get-messages/last-messages.md)
 
 ## Get Informations <a id="informations"></a>
 
