@@ -4,9 +4,9 @@ description: You can send WhatsApp contact messages with this endpoint.
 
 # Contact
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/document" %}
+{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/contact" %}
 {% api-method-summary %}
-Send Document Message
+Send Contact Message
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -87,7 +87,7 @@ Big document file!
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Example Usages
+## Example Usages
 
 {% tabs %}
 {% tab title="Node.js" %}
@@ -95,21 +95,20 @@ Big document file!
 const axios = require('axios');
 
 axios
-	.post(
-		'https://api.wapim.io/api/v1/whatsapp/message/document',
-		{
-			phone_number: 'RECIPIENT_NUMBER',
-			content_url: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
-		},
-		{
-			headers: {
-				token: 'YOUR_WAPIM_TOKEN',
-			},
-		},
-	)
-	.then(response => console.log(response.data))
-	.catch(error => console.log(error.response.data));
-
+    .post(
+        'https://api.wapim.io/api/v1/whatsapp/message/document',
+        {
+            phone_number: 'RECIPIENT_NUMBER',
+            content_url: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
+        },
+        {
+            headers: {
+                token: 'YOUR_WAPIM_TOKEN',
+            },
+        },
+    )
+    .then(response => console.log(response.data))
+    .catch(error => console.log(error.response.data));
 ```
 {% endtab %}
 
