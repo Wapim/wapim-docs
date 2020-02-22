@@ -28,3 +28,7 @@ No. To make the API fully functional, please always keep your phone online.
 
 Your phone should not be used for the WhatsApp Web at the same time.
 
+### Important Warning!
+
+Please do not spam with this API.
+

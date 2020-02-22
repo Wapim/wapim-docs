@@ -1,5 +1,5 @@
 ---
-description: This brings up the endpoint device information.
+description: This endpoint brings device information.
 ---
 
 # Device Info
@@ -10,7 +10,7 @@ Get Information of Device
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint get device info.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -49,25 +49,6 @@ Succesfully getting device info.
     "Tos": 0,
     "Lg": "en",
     "Is24h": true
-}
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-Unverifiable parameters.
-{% endapi-method-response-example-description %}
-
-```text
-{
-   "status":false,
-   "code":400,
-   "message":"Bad Request",
-   "error":{
-      "Send Text":[
-         "Malformed or missing phone id or message data!"
-      ]
-   }
 }
 ```
 {% endapi-method-response-example %}
