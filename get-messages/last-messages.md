@@ -88,19 +88,19 @@ Succesfully getting chat history.
 const axios = require('axios');
 
 axios
-    .post(
-        'https://api.wapim.io/api/v1/whatsapp/lastmessages',
-        {
-            count: 2,
-        },
-        {
-            headers: {
-                token: 'YOUR_WAPIM_TOKEN',
-            },
-        },
-    )
-    .then(response => console.log(response.data))
-    .catch(error => console.log(error.response.data));
+  .post(
+    'https://api.wapim.io/api/v1/whatsapp/lastmessages',
+    {
+      count: 2,
+    },
+    {
+      headers: {
+        token: 'YOUR_WAPIM_TOKEN',
+      },
+    },
+  )
+  .then(response => console.log(response.data))
+  .catch(error => console.log(error.response.data));
 ```
 {% endtab %}
 
