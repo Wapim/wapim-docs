@@ -1,12 +1,16 @@
+---
+description: This endpoint brings up the profile photo of a phone number.
+---
+
 # Profile Photos
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/profilephoto" %}
 {% api-method-summary %}
-Get Information of Device
+Get Profile Photos
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint get contacts.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -19,7 +23,7 @@ Authentication token.
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="phone\_number" type="string" required=true %}
-A phone number starting with the country code. You should set group id for group photos.
+A phone number starting with the country code.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
