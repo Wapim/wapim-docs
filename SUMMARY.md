@@ -2,15 +2,15 @@
 
 * [Before you start](README.md)
 
-## Send Messages <a id="messages"></a>
+## Send Messages
 
-* [Text](messages/send-text-message.md)
-* [Image](messages/image.md)
-* [Video](messages/video.md)
-* [Document](messages/document.md)
-* [Location](messages/location.md)
-* [Link](messages/link.md)
-* [Contact](messages/contact.md)
+* [Text](send-messages/send-text-message.md)
+* [Image](send-messages/image.md)
+* [Video](send-messages/video.md)
+* [Document](send-messages/document.md)
+* [Location](send-messages/location.md)
+* [Link](send-messages/link.md)
+* [Contact](send-messages/contact.md)
 
 ## Get Messages
 

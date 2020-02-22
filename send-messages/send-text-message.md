@@ -72,7 +72,7 @@ Missing or wrong params!
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Example Usages
+## Example Usages
 
 {% tabs %}
 {% tab title="Node.js" %}
@@ -106,3 +106,4 @@ curl \
 ```
 {% endtab %}
 {% endtabs %}
+
