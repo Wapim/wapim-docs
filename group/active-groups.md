@@ -1,5 +1,5 @@
 ---
-description: This endpoint brings active groups.
+description: This endpoint fetches active groups.
 ---
 
 # Active Groups
