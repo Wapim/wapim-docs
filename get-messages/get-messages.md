@@ -1,12 +1,15 @@
 ---
-description: Fetches messages with a specific phone number or group.
+description: >-
+  You can bring up the conversation history with a specific number or messages
+  in a group with this endpoint.
 ---
 
 # Get Messages
 
+
 {% api-method method="get" host="https://api.wapim.io/api/v1/whatsapp" path="/profile/device" %}
 {% api-method-summary %}
-Get Messages
+Get Information of Device
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -56,19 +59,32 @@ Succesfully getting device info.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-## Example Usages
+### Example Usages
 
 {% tabs %}
 {% tab title="Node.js" %}
 ```coffeescript
+const axios = require('axios');
 
+axios
+	.get('https://api.wapim.io/api/v1/whatsapp/profile/device', {
+		headers: {
+			token: 'YOUR_WAPIM_TOKEN',
+		},
+	})
+	.then(response => console.log(response.data))
+	.catch(error => console.log(error.response.data));
 ```
 {% endtab %}
 
 {% tab title="cURL" %}
 ```bash
-
+curl \
+  -X GET https://api.wapim.io/api/v1/whatsapp/profile/device \
+  -H "token: YOUR_WAPIM_TOKEN"
 ```
 {% endtab %}
 {% endtabs %}
+
+
 
