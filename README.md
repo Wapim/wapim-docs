@@ -30,5 +30,5 @@ Your phone should not be used for the WhatsApp Web at the same time.
 
 ### Important Warning!
 
-Please do not spam with this API.
+Please do not spam with this API. If you spam, you can be banned by WhatsApp.
 

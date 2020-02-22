@@ -1,7 +1,3 @@
----
-description: This endpoint brings active groups.
----
-
 # Active Groups
 
 {% api-method method="get" host="https://api.wapim.io/api/v1/whatsapp" path="/groups" %}
@@ -10,7 +6,7 @@ Get Active Groups
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+This endpoint get active groups.
 {% endapi-method-description %}
 
 {% api-method-spec %}

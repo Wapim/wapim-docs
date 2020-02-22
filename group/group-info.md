@@ -10,7 +10,7 @@ Get Group Information
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+This endpoint get contacts.
 {% endapi-method-description %}
 
 {% api-method-spec %}
