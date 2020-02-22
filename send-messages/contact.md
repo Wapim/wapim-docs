@@ -2,7 +2,7 @@
 description: You can send WhatsApp contact messages with this endpoint.
 ---
 
-# Contact
+# -Contact
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/contact" %}
 {% api-method-summary %}
@@ -22,12 +22,16 @@ Authentication token.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="contact\_name" type="string" required=true %}
+Contact name.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="phone\_number" type="string" required=true %}
 A phone number starting with the country code. US Example \(15417543010\).
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="content\_url" type="string" required=true %}
-Content URL
+{% api-method-parameter name="contact\_number" type="string" required=true %}
+Contact number.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="scheduled\_time" type="string" required=false %}
