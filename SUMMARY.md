@@ -17,12 +17,6 @@
 * [Chat History](get-messages/chat-history.md)
 * [Last Messages](get-messages/last-messages.md)
 
-## Get Informations <a id="informations"></a>
-
-* [Device Info](informations/device-info.md)
-* [Contact List](informations/contacts.md)
-* [Profile Photos](informations/get-profile-photo.md)
-
 ## Group
 
 * [Active Groups](group/active-groups.md)
@@ -31,6 +25,12 @@
 * [Add Participant to Group](group/add-participant-to-whatsapp-group.md)
 * [Remove Participant from Group](group/remove-participant-from-whatsapp-group.md)
 * [Send Message to Group](group/send-message-to-group.md)
+
+## Get Informations <a id="informations"></a>
+
+* [Device Info](informations/device-info.md)
+* [Contact List](informations/contacts.md)
+* [Profile Photos](informations/get-profile-photo.md)
 
 ## Webhook
 
