@@ -13,7 +13,7 @@
 
 ## Get Messages
 
-* [Get Messages](get-messages/get-messages.md)
+* [-Get Messages](get-messages/get-messages.md)
 
 ## Get Informations <a id="informations"></a>
 

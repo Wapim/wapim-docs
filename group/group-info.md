@@ -1,5 +1,5 @@
 ---
-description: This endpoint brings up all the details relevant to the group.
+description: This endpoint fetches all the details relevant to the group.
 ---
 
 # Group Informations
