@@ -2,7 +2,7 @@
 description: You can send WhatsApp contact messages with this endpoint.
 ---
 
-# -Contact
+# Contact
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/contact" %}
 {% api-method-summary %}
