@@ -1,5 +1,5 @@
 ---
-description: This endpoint brings device information.
+description: This endpoint fetches device information.
 ---
 
 # Device Info

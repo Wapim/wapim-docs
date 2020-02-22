@@ -1,5 +1,5 @@
 ---
-description: This endpoint brings up the profile photo of a phone number.
+description: This endpoint fetches the profile photo of a phone number.
 ---
 
 # Profile Photos

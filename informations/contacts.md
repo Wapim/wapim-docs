@@ -1,5 +1,5 @@
 ---
-description: This endpoint brings up your contact list.
+description: This endpoint fetches your contact list.
 ---
 
 # Contact List
