@@ -37,6 +37,10 @@ Link title.
 {% api-method-parameter name="description" type="string" required=false %}
 Link description.
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="scheduled\_time" type="string" required=false %}
+Scheduled time. \(Timestamp\)
+{% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
