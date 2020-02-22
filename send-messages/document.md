@@ -30,7 +30,7 @@ A phone number starting with the country code. US Example \(15417543010\).
 Content URL
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="scheduled\_time" type="number" required=false %}
+{% api-method-parameter name="scheduled\_time" type="string" required=false %}
 Scheduled time. \(Timestamp\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -44,7 +44,7 @@ Successfully send image message.
 
 ```text
 {
-    "queue_message_id": "15417543010_997B21D0C8B90189041D",
+    "queue_message_id": "905546453474_997B21D0C8B90189041D",
     "message": "We reached successfully"
 }
 ```

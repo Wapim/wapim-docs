@@ -38,7 +38,7 @@ Longitude. \(Example: -122.5076401\)
 Message caption.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="scheduled\_time" type="number" required=false %}
+{% api-method-parameter name="scheduled\_time" type="string" required=false %}
 Scheduled time. \(Timestamp\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -52,8 +52,8 @@ Location has been successfully submitted.
 
 ```text
 {
-    "queue_message_id": "15417543010_997B21D0C8B90189041D",
-    "message": "We reached successfully"
+	"status": true,
+	"code": 200
 }
 ```
 {% endapi-method-response-example %}
@@ -61,7 +61,7 @@ Location has been successfully submitted.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-## Example Usages
+### Example Usages
 
 {% tabs %}
 {% tab title="Node.js" %}
@@ -69,22 +69,23 @@ Location has been successfully submitted.
 const axios = require('axios');
 
 axios
-    .post(
-        'https://api.wapim.io/api/v1/whatsapp/message/location',
-        {
-            phone_number: 'RECIPIENT_NUMBER',
-            lat: 37.757815,
-            lon: -122.5076401,
-            title: 'My Location',
-        },
-        {
-            headers: {
-                token: 'YOUR_WAPIM_TOKEN',
-            },
-        },
-    )
-    .then(response => console.log(response.data))
-    .catch(error => console.log(error.response.data));
+	.post(
+		'https://api.wapim.io/api/v1/whatsapp/message/location',
+		{
+			phone_number: 'RECIPIENT_NUMBER',
+			lat: 37.757815,
+			lon: -122.5076401,
+			title: 'My Location',
+		},
+		{
+			headers: {
+				token: 'YOUR_WAPIM_TOKEN',
+			},
+		},
+	)
+	.then(response => console.log(response.data))
+	.catch(error => console.log(error.response.data));
+
 ```
 {% endtab %}
 
@@ -97,4 +98,3 @@ curl \
 ```
 {% endtab %}
 {% endtabs %}
-

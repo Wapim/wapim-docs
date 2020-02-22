@@ -34,7 +34,7 @@ Content URL. \(**Max. 5mb**\)
 Text under the video.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="scheduled\_time" type="number" required=false %}
+{% api-method-parameter name="scheduled\_time" type="string" required=false %}
 Schedule time. \(Timestamp\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
