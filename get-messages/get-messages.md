@@ -4,5 +4,5 @@ description: >-
   in a group with this endpoint.
 ---
 
-# Chat Messages
+# Get Messages
 

@@ -11,10 +11,9 @@
 * [Location](messages/location-message.md)
 * [Link](messages/link.md)
 
-## Read Messages
+## Get Messages
 
-* [Chat Messages](read-messages/personel.md)
-* [Last 100 Messages](read-messages/last-100-messages.md)
+* [Get Messages](get-messages/get-messages.md)
 
 ## Get Informations <a id="informations"></a>
 
