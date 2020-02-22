@@ -6,10 +6,9 @@ description: >-
 
 # Get Messages
 
-
 {% api-method method="get" host="https://api.wapim.io/api/v1/whatsapp" path="/profile/device" %}
 {% api-method-summary %}
-Get Information of Device
+Get Messages
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -59,7 +58,7 @@ Succesfully getting device info.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Example Usages
+## Example Usages
 
 {% tabs %}
 {% tab title="Node.js" %}
@@ -67,13 +66,13 @@ Succesfully getting device info.
 const axios = require('axios');
 
 axios
-	.get('https://api.wapim.io/api/v1/whatsapp/profile/device', {
-		headers: {
-			token: 'YOUR_WAPIM_TOKEN',
-		},
-	})
-	.then(response => console.log(response.data))
-	.catch(error => console.log(error.response.data));
+    .get('https://api.wapim.io/api/v1/whatsapp/profile/device', {
+        headers: {
+            token: 'YOUR_WAPIM_TOKEN',
+        },
+    })
+    .then(response => console.log(response.data))
+    .catch(error => console.log(error.response.data));
 ```
 {% endtab %}
 
@@ -85,6 +84,4 @@ curl \
 ```
 {% endtab %}
 {% endtabs %}
-
-
 
