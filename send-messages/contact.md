@@ -65,20 +65,21 @@ Successfully send image message.
 const axios = require('axios');
 
 axios
-    .post(
-        'https://api.wapim.io/api/v1/whatsapp/message/document',
-        {
-            phone_number: 'RECIPIENT_NUMBER',
-            content_url: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
-        },
-        {
-            headers: {
-                token: 'YOUR_WAPIM_TOKEN',
-            },
-        },
-    )
-    .then(response => console.log(response.data))
-    .catch(error => console.log(error.response.data));
+	.post(
+		'https://api.wapim.io/api/v1/whatsapp/message/contact',
+		{
+			phone_number: 'RECIPIENT_NUMBER',
+			contact_name: 'CONTACT_NAME',
+			contact_number: 'CONTACT_NUMBER',
+		},
+		{
+			headers: {
+				token: 'YOUR_WAPIM_TOKEN',
+			},
+		},
+	)
+	.then(response => console.log(response.data))
+	.catch(error => console.log(error.response.data));
 ```
 {% endtab %}
 
@@ -87,7 +88,7 @@ axios
 curl \
   -X POST https://api.wapim.io/api/v1/whatsapp/message/contact \
   -H "token: YOUR_WAPIM_TOKEN" \
-  -d '{"phone_number":"RECIPIENT_NUMBER", "contact_name":"John Doe", "contact_number":"15417543010"}'
+  -d '{"phone_number":"RECIPIENT_NUMBER", "contact_name":"CONTACT_NAME", "contact_number":"CONTACT_NUMBER"}'
 ```
 {% endtab %}
 {% endtabs %}
