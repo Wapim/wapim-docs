@@ -10,7 +10,7 @@
 * [Document](send-messages/document.md)
 * [Location](send-messages/location.md)
 * [Link](send-messages/link.md)
-* [Contact](send-messages/contact.md)
+* [-Contact](send-messages/contact.md)
 
 ## Get Messages
 
