@@ -2,7 +2,7 @@
 description: You can send WhatsApp contact messages with this endpoint.
 ---
 
-# Contact
+# -Contact
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/contact" %}
 {% api-method-summary %}
@@ -22,6 +22,8 @@ Authentication token.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+
+
 {% api-method-parameter name="phone\_number" type="string" required=true %}
 A phone number starting with the country code. US Example \(15417543010\).
 {% endapi-method-parameter %}
@@ -33,6 +35,7 @@ Contact name.
 {% api-method-parameter name="contact\_number" type="string" required=true %}
 Contact number.
 {% endapi-method-parameter %}
+
 
 {% api-method-parameter name="scheduled\_time" type="string" required=false %}
 Scheduled time. \(Timestamp\)
@@ -53,6 +56,40 @@ Successfully send image message.
 }
 ```
 {% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=400 %}
+{% api-method-response-example-description %}
+Missing or wrong params!
+{% endapi-method-response-example-description %}
+
+```text
+{
+    "status": false,
+    "code": 400,
+    "message": "Bad Request",
+    "error": {
+        "Send Text": [
+            "Malformed or missing phone id or message data!"
+        ]
+    }
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=413 %}
+{% api-method-response-example-description %}
+Big document file!
+{% endapi-method-response-example-description %}
+
+```text
+{
+    "status": false,
+    "code": 413,
+    "message": "Big file",
+    "error": "Max 5 MB file."
+}
+```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
@@ -65,30 +102,29 @@ Successfully send image message.
 const axios = require('axios');
 
 axios
-	.post(
-		'https://api.wapim.io/api/v1/whatsapp/message/contact',
-		{
-			phone_number: 'RECIPIENT_NUMBER',
-			contact_name: 'CONTACT_NAME',
-			contact_number: 'CONTACT_NUMBER',
-		},
-		{
-			headers: {
-				token: 'YOUR_WAPIM_TOKEN',
-			},
-		},
-	)
-	.then(response => console.log(response.data))
-	.catch(error => console.log(error.response.data));
+    .post(
+        'https://api.wapim.io/api/v1/whatsapp/message/document',
+        {
+            phone_number: 'RECIPIENT_NUMBER',
+            content_url: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
+        },
+        {
+            headers: {
+                token: 'YOUR_WAPIM_TOKEN',
+            },
+        },
+    )
+    .then(response => console.log(response.data))
+    .catch(error => console.log(error.response.data));
 ```
 {% endtab %}
 
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/message/contact \
+  -X POST https://api.wapim.io/api/v1/whatsapp/message/document \
   -H "token: YOUR_WAPIM_TOKEN" \
-  -d '{"phone_number":"RECIPIENT_NUMBER", "contact_name":"CONTACT_NAME", "contact_number":"CONTACT_NUMBER"}'
+  -d '{"phone_number": "RECIPIENT_NUMBER", "content_url" : "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"}'
 ```
 {% endtab %}
 {% endtabs %}

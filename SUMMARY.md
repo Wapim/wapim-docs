@@ -9,8 +9,8 @@
 * [Video](send-messages/video.md)
 * [Document](send-messages/document.md)
 * [Location](send-messages/location.md)
-* [Link](send-messages/link.md)
 * [Contact](send-messages/contact.md)
+* [Link](send-messages/link.md)
 
 ## Get Messages
 
