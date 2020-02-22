@@ -8,7 +8,7 @@ description: >-
 
 ## What do I need to use the API?
 
-All you need is to provide an  Wapim API key. Please [**click**](https://app.wapim.io) to create a new API key.
+All you need is to provide an Wapim API key. Please [**click**](https://app.wapim.io) to create a new API key.
 
 ![Wapim API Key](.gitbook/assets/wapim-api-key.jpg)
 
