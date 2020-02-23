@@ -2,7 +2,7 @@
 description: This endpoint fetches the profile photo of a phone number.
 ---
 
-# Profile Photos
+# Profile Photo
 
 {% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/profilephoto" %}
 {% api-method-summary %}

@@ -30,7 +30,7 @@
 
 * [Device Info](informations/device-info.md)
 * [Contact List](informations/contacts.md)
-* [Profile Photos](informations/get-profile-photo.md)
+* [Profile Photo](informations/get-profile-photo.md)
 
 ## Webhook
 
