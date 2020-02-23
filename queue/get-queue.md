@@ -1,5 +1,5 @@
 ---
-description: Fetches chat history with a specific phone number or group.
+description: You can receive your message id list in the queue with this endpoint.
 ---
 
 # Get Queue
@@ -25,11 +25,21 @@ Authentication token.
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Successfully getting chat history.
+Successfully fetches queue.
 {% endapi-method-response-example-description %}
 
 ```text
-
+{
+	"status": true,
+	"code": 200,
+	"message": [
+		"15417543010_336DB0ABD8A3DD6D7811",
+		"15417543010_2AF15D005763B87F5F95",
+		"15417543010_739FA20C28DF17160616",
+		"15417543010_D26C90A6EC4A84619B75",
+		"15417543010_47FB14667D176D7A14F1"
+	]
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
