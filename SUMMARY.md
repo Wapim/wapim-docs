@@ -40,15 +40,15 @@
 
 * [WebSocket](websocket/websocket-connection.md)
 
-## Others
-
-* [Connection Status](others/status.md)
-* [Generate QR Code](others/generate-qr-code.md)
-* [Logout](others/logout.md)
-
 ## Queue
 
 * [Get Queue](queue/get-queue.md)
 * [Clear Message Queue](queue/delete-messages.md)
 * [Get Queue Length](queue/get-queue-length.md)
+
+## Others
+
+* [Connection Status](others/status.md)
+* [Generate QR Code](others/generate-qr-code.md)
+* [Logout](others/logout.md)
 
