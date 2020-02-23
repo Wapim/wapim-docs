@@ -48,6 +48,7 @@
 
 ## Queue
 
+* [Get Queue](queue/get-queue.md)
 * [Delete Messages](queue/delete-messages.md)
-* [Count](queue/count.md)
+* [Get Length](queue/count.md)
 

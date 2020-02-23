@@ -1,12 +1,12 @@
 ---
-description: Fetches latest messages.
+description: Fetches chat history with a specific phone number or group.
 ---
 
 # Last Messages
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/lastmessages" %}
+{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/messages" %}
 {% api-method-summary %}
-Last Messages
+Chat History
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -22,6 +22,10 @@ Authentication token.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="phone\_number" type="string" required=true %}
+Phone number or group id.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="count" type="number" required=false %}
 How many messages. \(Default: 10\)
 {% endapi-method-parameter %}
@@ -31,7 +35,7 @@ How many messages. \(Default: 10\)
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Successfully getting last messages.
+Succesfully getting chat history.
 {% endapi-method-response-example-description %}
 
 ```text
@@ -60,6 +64,17 @@ Successfully getting last messages.
          "text":"How are you?",
          "timestamp":1582288581,
          "to_phone_number":"15417543010"
+      },
+      {
+         "event_name":"TextMessage",
+         "from_group":false,
+         "from_me":false,
+         "from_phone_number":"16417543016",
+         "instance_id":"ck6w8bq3n05hg07995ztv1a33",
+         "message_id":"3A06FC2CCEC0E2122006",
+         "text":"Fine. You?",
+         "timestamp":1582291178,
+         "to_phone_number":"15417543010"
       }
    ]
 }
@@ -77,28 +92,30 @@ Successfully getting last messages.
 const axios = require('axios');
 
 axios
-  .post(
-    'https://api.wapim.io/api/v1/whatsapp/lastmessages',
-    {
-      count: 2,
-    },
-    {
-      headers: {
-        token: 'YOUR_WAPIM_TOKEN',
-      },
-    },
-  )
-  .then(response => console.log(response.data))
-  .catch(error => console.log(error.response.data));
+	.post(
+		'https://api.wapim.io/api/v1/whatsapp/messages',
+		{
+			phone_number: 'PHONE_NUMBER_OR_GROUP_ID',
+			count: 12,
+		},
+		{
+			headers: {
+				token: 'YOUR_WAPIM_TOKEN',
+			},
+		},
+	)
+	.then(response => console.log(response.data))
+	.catch(error => console.log(error.response.data));
+
 ```
 {% endtab %}
 
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/lastmessages \
+  -X POST https://api.wapim.io/api/v1/whatsapp/messages \
   -H "token: YOUR_WAPIM_TOKEN" \
-  -d '{"count": 2}'
+  -d '{"phone_number": "PHONE_NUMBER_OR_GROUP_ID", "count": 12}'
 ```
 {% endtab %}
 {% endtabs %}
