@@ -6,7 +6,7 @@ description: This endpoint allows you to get connection status.
 
 {% api-method method="get" host="https://api.wapim.io/api/v1/whatsapp" path="/status" %}
 {% api-method-summary %}
-Status
+Get Connection Status
 {% endapi-method-summary %}
 
 {% api-method-description %}

@@ -41,7 +41,6 @@ Link description.
 {% api-method-parameter name="scheduled\_time" type="number" required=false %}
 Scheduled time. \(Timestamp\)
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -81,7 +80,7 @@ Missing or wrong params!
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Example Usages
+## Example Usages
 
 {% tabs %}
 {% tab title="Node.js" %}

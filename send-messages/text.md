@@ -30,7 +30,7 @@ A phone number starting with the country code. US example: "15417543010".
 Content of text message.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="scheduled\_time" type="string" required=false %}
+{% api-method-parameter name="scheduled\_time" type="number" required=false %}
 Schedule time. \(Timestamp\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}

@@ -1,2 +1,2 @@
-# Delete Messages
+# Clear Message Queue
 
