@@ -41,6 +41,16 @@ Successfully getting chat history.
 {% tabs %}
 {% tab title="Node.js" %}
 ```coffeescript
+const axios = require('axios');
+
+axios
+	.get('https://api.wapim.io/api/v1/whatsapp/queue', {
+		headers: {
+			token: 'YOUR_WAPIM_TOKEN',
+		},
+	})
+	.then(response => console.log(response.data))
+	.catch(error => console.log(error.response.data));
 
 ```
 {% endtab %}
