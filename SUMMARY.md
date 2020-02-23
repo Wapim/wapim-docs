@@ -44,7 +44,6 @@
 
 * [Get Queue](queue/get-queue.md)
 * [Clear Message Queue](queue/delete-messages.md)
-* [Get Queue Length](queue/get-queue-length.md)
 
 ## Others
 
