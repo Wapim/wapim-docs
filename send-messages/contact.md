@@ -4,7 +4,7 @@ description: You can send WhatsApp contact messages with this endpoint.
 
 # Contact
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/contact" %}
+{% api-method method="post" host="https://api.wapim.co/api/v1/whatsapp" path="/message/contact" %}
 {% api-method-summary %}
 Send Contact Message
 {% endapi-method-summary %}
@@ -66,7 +66,7 @@ const axios = require('axios');
 
 axios
 	.post(
-		'https://api.wapim.io/api/v1/whatsapp/message/contact',
+		'https://api.wapim.co/api/v1/whatsapp/message/contact',
 		{
 			phone_number: 'RECIPIENT_NUMBER',
 			contact_name: 'CONTACT_NAME',
@@ -86,7 +86,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/message/contact \
+  -X POST https://api.wapim.co/api/v1/whatsapp/message/contact \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"phone_number":"RECIPIENT_NUMBER", "contact_name":"CONTACT_NAME", "contact_number":"CONTACT_NUMBER"}'
 ```

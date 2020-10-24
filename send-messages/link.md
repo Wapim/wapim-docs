@@ -4,7 +4,7 @@ description: You can send WhatsApp link messages with this endpoint.
 
 # Link
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/link" %}
+{% api-method method="post" host="https://api.wapim.co/api/v1/whatsapp" path="/message/link" %}
 {% api-method-summary %}
 Send Link Message
 {% endapi-method-summary %}
@@ -89,10 +89,10 @@ const axios = require('axios');
 
 axios
  .post(
-    'https://api.wapim.io/api/v1/whatsapp/message/link',
+    'https://api.wapim.co/api/v1/whatsapp/message/link',
     {
       phone_number: 'RECIPIENT_NUMBER',
-      url: 'https://wapim.io',
+      url: 'https://wapim.co',
       title: 'WAPIM',
       description: 'Super fast WhatsApp API!',
     },
@@ -110,9 +110,9 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/message/link \
+  -X POST https://api.wapim.co/api/v1/whatsapp/message/link \
   -H "token: YOUR_WAPIM_TOKEN" \
-  -d '{"phone_number": "RECIPIENT_NUMBER", "url": "https://wapim.io", "title": "WAPIM", "description": "Super fast WhatsApp API!"}'
+  -d '{"phone_number": "RECIPIENT_NUMBER", "url": "https://wapim.co", "title": "WAPIM", "description": "Super fast WhatsApp API!"}'
 ```
 {% endtab %}
 {% endtabs %}

@@ -4,7 +4,7 @@ description: You can log out with this endpoint.
 
 # Logout
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/logout" %}
+{% api-method method="post" host="https://api.wapim.co/api/v1/whatsapp" path="/logout" %}
 {% api-method-summary %}
 Logout
 {% endapi-method-summary %}
@@ -55,7 +55,7 @@ const axios = require('axios');
 
 axios
 	.post(
-		'https://api.wapim.io/api/v1/whatsapp/logout',
+		'https://api.wapim.co/api/v1/whatsapp/logout',
 		{
 			persistent: true,
 		},
@@ -74,7 +74,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/logout \
+  -X POST https://api.wapim.co/api/v1/whatsapp/logout \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"persistent":true}'
 ```

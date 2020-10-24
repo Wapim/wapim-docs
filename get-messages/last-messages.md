@@ -4,7 +4,7 @@ description: Fetches latest messages.
 
 # Last Messages
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/lastmessages" %}
+{% api-method method="post" host="https://api.wapim.co/api/v1/whatsapp" path="/lastmessages" %}
 {% api-method-summary %}
 Last Messages
 {% endapi-method-summary %}
@@ -78,7 +78,7 @@ const axios = require('axios');
 
 axios
   .post(
-    'https://api.wapim.io/api/v1/whatsapp/lastmessages',
+    'https://api.wapim.co/api/v1/whatsapp/lastmessages',
     {
       count: 2,
     },
@@ -96,7 +96,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/lastmessages \
+  -X POST https://api.wapim.co/api/v1/whatsapp/lastmessages \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"count": 2}'
 ```

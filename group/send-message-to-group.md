@@ -8,7 +8,7 @@ description: You can send messages to the groups with send message endpoints.
 You will see the following text message example. But you can use all message endpoints in the same way.
 {% endhint %}
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/text" %}
+{% api-method method="post" host="https://api.wapim.co/api/v1/whatsapp" path="/message/text" %}
 {% api-method-summary %}
 Send Message to Group
 {% endapi-method-summary %}
@@ -85,7 +85,7 @@ const axios = require('axios');
 
 axios
   .post(
-    'https://api.wapim.io/api/v1/whatsapp/message/text',
+    'https://api.wapim.co/api/v1/whatsapp/message/text',
     {
      phone_number: 'GROUP_ID',
      message: 'Hello Group'
@@ -104,7 +104,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/message/text \
+  -X POST https://api.wapim.co/api/v1/whatsapp/message/text \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"phone_number": "GROUP_ID", "message" : "Hello Group"}'
 ```

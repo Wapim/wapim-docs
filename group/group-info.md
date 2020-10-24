@@ -4,7 +4,7 @@ description: This endpoint fetches all the details relevant to the group.
 
 # Group Informations
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/group/info" %}
+{% api-method method="post" host="https://api.wapim.co/api/v1/whatsapp" path="/group/info" %}
 {% api-method-summary %}
 Get Group Information
 {% endapi-method-summary %}
@@ -79,7 +79,7 @@ const axios = require('axios');
 
 axios
 	.post(
-		'https://api.wapim.io/api/v1/whatsapp/group/info',
+		'https://api.wapim.co/api/v1/whatsapp/group/info',
 		{
 			gid: 'GROUP_ID',
 		},
@@ -98,7 +98,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/group/info \
+  -X POST https://api.wapim.co/api/v1/whatsapp/group/info \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"gid": "GROUP_ID"}'
 ```

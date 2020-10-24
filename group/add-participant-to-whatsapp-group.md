@@ -4,7 +4,7 @@ description: You can add new participants to the group with this endpoint.
 
 # Add Participant to Group
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/group/add" %}
+{% api-method method="post" host="https://api.wapim.co/api/v1/whatsapp" path="/group/add" %}
 {% api-method-summary %}
 Add participant to group
 {% endapi-method-summary %}
@@ -59,7 +59,7 @@ const axios = require('axios');
 
 axios
 	.post(
-		'https://api.wapim.io/api/v1/whatsapp/group/add',
+		'https://api.wapim.co/api/v1/whatsapp/group/add',
 		{
 			gid: 'GROUP_ID',
 			participants: 'PARTICIPANT_NUMBER1,PARTICIPANT_NUMBER2',
@@ -79,7 +79,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/group/add \
+  -X POST https://api.wapim.co/api/v1/whatsapp/group/add \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"participants": "PARTICIPANT_NUMBER1,PARTICIPANT_NUMBER2", "gid":"GROUP_ID"}'
 ```

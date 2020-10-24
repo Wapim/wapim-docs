@@ -4,7 +4,7 @@ description: You can send WhatsApp location messages with this endpoint.
 
 # Location
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/location" %}
+{% api-method method="post" host="https://api.wapim.co/api/v1/whatsapp" path="/message/location" %}
 {% api-method-summary %}
 Send Location
 {% endapi-method-summary %}
@@ -70,7 +70,7 @@ const axios = require('axios');
 
 axios
     .post(
-        'https://api.wapim.io/api/v1/whatsapp/message/location',
+        'https://api.wapim.co/api/v1/whatsapp/message/location',
         {
             phone_number: 'RECIPIENT_NUMBER',
             lat: 37.757815,
@@ -91,7 +91,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/message/location \
+  -X POST https://api.wapim.co/api/v1/whatsapp/message/location \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"phone_number": "RECIPIENT_NUMBER", "lat": 37.757815, "lon": -122.5076401, "title": "My Location"}'
 ```

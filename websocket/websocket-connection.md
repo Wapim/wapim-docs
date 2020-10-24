@@ -11,7 +11,7 @@ You can use this feature only with **Platinum** plan.
 {% endhint %}
 
 {% hint style="warning" %}
-Make sure to enable WebSocket in the webhook settings on the [**Wapim Console**](https://app.wapim.io).
+Make sure to enable WebSocket in the webhook settings on the [**Wapim Console**](https://app.wapim.co).
 {% endhint %}
 
 ![Wapim Console webhook settings](../.gitbook/assets/wapim-whatsapp-websocket-options.png)
@@ -27,7 +27,7 @@ We are preparing a very simple HTML document below. We create an event when the 
 	</body>
 
 	<script>
-		let socket = new WebSocket('wss://api.wapim.io/ws?token=YOUR_WAPIM_TOKEN');
+		let socket = new WebSocket('wss://api.wapim.co/ws?token=YOUR_WAPIM_TOKEN');
 
 		socket.onopen = function(e) {
 			console.log('[open] Connection established');
@@ -56,7 +56,7 @@ We are preparing a very simple HTML document below. We create an event when the 
 
 ### What situations do I get notified about?
 
-You can learn about this on [**Webhook page**](https://docs.wapim.io/webhook/webhook).
+You can learn about this on [**Webhook page**](https://docs.wapim.co/webhook/webhook).
 
 
 

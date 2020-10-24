@@ -4,7 +4,7 @@ description: You can send WhatsApp video messages with this endpoint.
 
 # Video
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/video" %}
+{% api-method method="post" host="https://api.wapim.co/api/v1/whatsapp" path="/message/video" %}
 {% api-method-summary %}
 Send Video Message
 {% endapi-method-summary %}
@@ -66,7 +66,7 @@ const axios = require('axios');
 
 axios
 	.post(
-		'https://api.wapim.io/api/v1/whatsapp/message/video',
+		'https://api.wapim.co/api/v1/whatsapp/message/video',
 		{
 			phone_number: 'RECIPIENT_NUMBER',
 			content_url: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
@@ -87,7 +87,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/message/video \
+  -X POST https://api.wapim.co/api/v1/whatsapp/message/video \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"phone_number": "RECIPIENT_NUMBER", "content_url":"https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",  "caption" : "Hello from Wapim"}'
 ```

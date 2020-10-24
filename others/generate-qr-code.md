@@ -4,7 +4,7 @@ description: You can generate WhatsApp QR code with this endpoint.
 
 # Generate QR Code
 
-{% api-method method="get" host="https://api.wapim.io/api/v1/whatsapp" path="/login" %}
+{% api-method method="get" host="https://api.wapim.co/api/v1/whatsapp" path="/login" %}
 {% api-method-summary %}
 Get WhatsApp QR Code for Login
 {% endapi-method-summary %}
@@ -53,7 +53,7 @@ Authentication token.
 const axios = require('axios');
 
 axios
-	.get('https://api.wapim.io/api/v1/whatsapp/login', {
+	.get('https://api.wapim.co/api/v1/whatsapp/login', {
 		headers: {
 			token: 'YOUR_WAPIM_TOKEN',
 		},
@@ -67,7 +67,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X GET https://api.wapim.io/api/v1/whatsapp/login \
+  -X GET https://api.wapim.co/api/v1/whatsapp/login \
   -H "token: YOUR_WAPIM_TOKEN"
 ```
 {% endtab %}

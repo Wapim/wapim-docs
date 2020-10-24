@@ -4,7 +4,7 @@ description: This endpoint fetches device information.
 
 # Device Info
 
-{% api-method method="get" host="https://api.wapim.io/api/v1/whatsapp" path="/profile/device" %}
+{% api-method method="get" host="https://api.wapim.co/api/v1/whatsapp" path="/profile/device" %}
 {% api-method-summary %}
 Get Information of Device
 {% endapi-method-summary %}
@@ -64,7 +64,7 @@ Succesfully getting device info.
 const axios = require('axios');
 
 axios
-	.get('https://api.wapim.io/api/v1/whatsapp/profile/device', {
+	.get('https://api.wapim.co/api/v1/whatsapp/profile/device', {
 		headers: {
 			token: 'YOUR_WAPIM_TOKEN',
 		},
@@ -77,7 +77,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X GET https://api.wapim.io/api/v1/whatsapp/profile/device \
+  -X GET https://api.wapim.co/api/v1/whatsapp/profile/device \
   -H "token: YOUR_WAPIM_TOKEN"
 ```
 {% endtab %}

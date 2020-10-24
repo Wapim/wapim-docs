@@ -4,7 +4,7 @@ description: Fetches chat history with a specific phone number or group.
 
 # Chat History
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/messages" %}
+{% api-method method="post" host="https://api.wapim.co/api/v1/whatsapp" path="/messages" %}
 {% api-method-summary %}
 Chat History
 {% endapi-method-summary %}
@@ -93,7 +93,7 @@ const axios = require('axios');
 
 axios
 	.post(
-		'https://api.wapim.io/api/v1/whatsapp/messages',
+		'https://api.wapim.co/api/v1/whatsapp/messages',
 		{
 			phone_number: 'PHONE_NUMBER_OR_GROUP_ID',
 			count: 12,
@@ -113,7 +113,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/messages \
+  -X POST https://api.wapim.co/api/v1/whatsapp/messages \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"phone_number": "PHONE_NUMBER_OR_GROUP_ID", "count": 12}'
 ```

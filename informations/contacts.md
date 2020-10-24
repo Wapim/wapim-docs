@@ -4,7 +4,7 @@ description: This endpoint fetches your contact list.
 
 # Contact List
 
-{% api-method method="get" host="https://api.wapim.io/api/v1/whatsapp" path="/contacts" %}
+{% api-method method="get" host="https://api.wapim.co/api/v1/whatsapp" path="/contacts" %}
 {% api-method-summary %}
 Get Contact List
 {% endapi-method-summary %}
@@ -64,7 +64,7 @@ Succesfully getting contacts.
 const axios = require('axios');
 
 axios
-	.get('https://api.wapim.io/api/v1/whatsapp/contacts', {
+	.get('https://api.wapim.co/api/v1/whatsapp/contacts', {
 		headers: {
 			token: 'YOUR_WAPIM_TOKEN',
 		},
@@ -77,7 +77,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X GET https://api.wapim.io/api/v1/whatsapp/contacts \
+  -X GET https://api.wapim.co/api/v1/whatsapp/contacts \
   -H "token: YOUR_WAPIM_TOKEN"
 ```
 {% endtab %}

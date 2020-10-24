@@ -4,7 +4,7 @@ description: With this endpoint you can create a new WhatsApp group.
 
 # Create New Group
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/group/create" %}
+{% api-method method="post" host="https://api.wapim.co/api/v1/whatsapp" path="/group/create" %}
 {% api-method-summary %}
 Create a new WhatsApp Group
 {% endapi-method-summary %}
@@ -59,7 +59,7 @@ const axios = require('axios');
 
 axios
 	.post(
-		'https://api.wapim.io/api/v1/whatsapp/group/create',
+		'https://api.wapim.co/api/v1/whatsapp/group/create',
 		{
 			subject: 'Welcome to Wapim!',
 			participants: 'WHATSAPP_NUMBER_1,WHATSAPP_NUMBER_2',
@@ -79,7 +79,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/group/create \
+  -X POST https://api.wapim.co/api/v1/whatsapp/group/create \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"subject": "Welcome to Wapim!", "participants":"WHATSAPP_NUMBER_1,WHATSAPP_NUMBER_2"}'
 ```

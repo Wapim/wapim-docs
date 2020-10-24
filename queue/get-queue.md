@@ -4,7 +4,7 @@ description: You can receive your message id list in the queue with this endpoin
 
 # Get Queue
 
-{% api-method method="get" host="https://api.wapim.io/api/v1/whatsapp" path="/queue" %}
+{% api-method method="get" host="https://api.wapim.co/api/v1/whatsapp" path="/queue" %}
 {% api-method-summary %}
 Get Queue
 {% endapi-method-summary %}
@@ -54,7 +54,7 @@ Successfully fetches queue.
 const axios = require('axios');
 
 axios
-	.get('https://api.wapim.io/api/v1/whatsapp/queue', {
+	.get('https://api.wapim.co/api/v1/whatsapp/queue', {
 		headers: {
 			token: 'YOUR_WAPIM_TOKEN',
 		},
@@ -68,7 +68,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X GET https://api.wapim.io/api/v1/whatsapp/queue \
+  -X GET https://api.wapim.co/api/v1/whatsapp/queue \
   -H "token: YOUR_WAPIM_TOKEN"
 ```
 {% endtab %}

@@ -4,7 +4,7 @@ description: This endpoint fetches the profile photo of a phone number.
 
 # Profile Photo
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/profilephoto" %}
+{% api-method method="post" host="https://api.wapim.co/api/v1/whatsapp" path="/profilephoto" %}
 {% api-method-summary %}
 Get Profile Photos
 {% endapi-method-summary %}
@@ -39,7 +39,7 @@ Succesfully getted profile photo.
     "status": true,
     "code": 200,
     "message": {
-      "eurl": "https://cdn.wapim.io/wapim-media/profilepictures/requested_number.jpg",
+      "eurl": "https://cdn.wapim.co/wapim-media/profilepictures/requested_number.jpg",
       "tag": "",
       "status": 0
     }
@@ -73,7 +73,7 @@ const axios = require('axios');
 
 axios
 	.post(
-		'https://api.wapim.io/api/v1/whatsapp/profilephoto',
+		'https://api.wapim.co/api/v1/whatsapp/profilephoto',
 		{
 			phone_number: 'PHONE_NUMBER',
 		},
@@ -91,7 +91,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/profilephoto \
+  -X POST https://api.wapim.co/api/v1/whatsapp/profilephoto \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"phone_number": "PHONE_NUMBER"}'
 ```

@@ -4,7 +4,7 @@ description: You can clear message queue with this endpoint.
 
 # Clear Message Queue
 
-{% api-method method="delete" host="https://api.wapim.io/api/v1/whatsapp" path="/queue" %}
+{% api-method method="delete" host="https://api.wapim.co/api/v1/whatsapp" path="/queue" %}
 {% api-method-summary %}
 Clear Message Queue
 {% endapi-method-summary %}
@@ -48,7 +48,7 @@ Successfully fetches queue.
 const axios = require('axios');
 
 axios
-  .delete('https://api.wapim.io/api/v1/whatsapp/queue', {
+  .delete('https://api.wapim.co/api/v1/whatsapp/queue', {
     headers: {
       token: 'YOUR_WAPIM_TOKEN',
     },
@@ -61,7 +61,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X DELETE https://api.wapim.io/api/v1/whatsapp/queue \
+  -X DELETE https://api.wapim.co/api/v1/whatsapp/queue \
   -H "token: YOUR_WAPIM_TOKEN"
 ```
 {% endtab %}

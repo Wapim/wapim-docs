@@ -4,7 +4,7 @@ description: This endpoint allows you to get connection status.
 
 # Connection Status
 
-{% api-method method="get" host="https://api.wapim.io/api/v1/whatsapp" path="/status" %}
+{% api-method method="get" host="https://api.wapim.co/api/v1/whatsapp" path="/status" %}
 {% api-method-summary %}
 Get Connection Status
 {% endapi-method-summary %}
@@ -73,7 +73,7 @@ Status successfully retrieved.
 const axios = require('axios');
 
 axios
-	.get('https://api.wapim.io/api/v1/whatsapp/status', {
+	.get('https://api.wapim.co/api/v1/whatsapp/status', {
 		headers: {
 			token: 'YOUR_WAPIM_TOKEN',
 		},
@@ -87,7 +87,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X GET https://api.wapim.io/api/v1/whatsapp/status \
+  -X GET https://api.wapim.co/api/v1/whatsapp/status \
   -H "token: YOUR_WAPIM_TOKEN"
 ```
 {% endtab %}

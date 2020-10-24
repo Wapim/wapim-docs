@@ -4,7 +4,7 @@ description: You can remove users from the group with this endpoint.
 
 # Remove Participant from Group
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/group/remove" %}
+{% api-method method="post" host="https://api.wapim.co/api/v1/whatsapp" path="/group/remove" %}
 {% api-method-summary %}
 Remove participant from group
 {% endapi-method-summary %}
@@ -59,7 +59,7 @@ const axios = require('axios');
 
 axios
 	.post(
-		'https://api.wapim.io/api/v1/whatsapp/group/remove',
+		'https://api.wapim.co/api/v1/whatsapp/group/remove',
 		{
 			gid: 'GROUP_ID',
 			participants: 'PHONE_NUMBER',
@@ -79,7 +79,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/group/remove \
+  -X POST https://api.wapim.co/api/v1/whatsapp/group/remove \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"participants": "PHONE_NUMBER", "gid":"GROUP_ID"}'
 ```

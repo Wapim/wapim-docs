@@ -4,7 +4,7 @@ description: You can send WhatsApp document messages with this endpoint.
 
 # Document
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/document" %}
+{% api-method method="post" host="https://api.wapim.co/api/v1/whatsapp" path="/message/document" %}
 {% api-method-summary %}
 Send Document Message
 {% endapi-method-summary %}
@@ -96,7 +96,7 @@ const axios = require('axios');
 
 axios
 	.post(
-		'https://api.wapim.io/api/v1/whatsapp/message/document',
+		'https://api.wapim.co/api/v1/whatsapp/message/document',
 		{
 			phone_number: 'RECIPIENT_NUMBER',
 			content_url: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
@@ -116,7 +116,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/message/document \
+  -X POST https://api.wapim.co/api/v1/whatsapp/message/document \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"phone_number": "RECIPIENT_NUMBER", "content_url" : "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"}'
 ```

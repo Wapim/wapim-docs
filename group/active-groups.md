@@ -4,7 +4,7 @@ description: This endpoint fetches active groups.
 
 # Active Groups
 
-{% api-method method="get" host="https://api.wapim.io/api/v1/whatsapp" path="/groups" %}
+{% api-method method="get" host="https://api.wapim.co/api/v1/whatsapp" path="/groups" %}
 {% api-method-summary %}
 Get Active Groups
 {% endapi-method-summary %}
@@ -57,7 +57,7 @@ Succesfully getting active groups.
 const axios = require('axios');
 
 axios
-	.get('https://api.wapim.io/api/v1/whatsapp/groups', {
+	.get('https://api.wapim.co/api/v1/whatsapp/groups', {
 		headers: {
 			token: 'YOUR_WAPIM_TOKEN',
 		},
@@ -70,7 +70,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X GET https://api.wapim.io/api/v1/whatsapp/groups \
+  -X GET https://api.wapim.co/api/v1/whatsapp/groups \
   -H "token: YOUR_WAPIM_TOKEN"
 ```
 {% endtab %}

@@ -4,7 +4,7 @@ description: You can send WhatsApp image messages with this endpoint.
 
 # Image
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/image" %}
+{% api-method method="post" host="https://api.wapim.co/api/v1/whatsapp" path="/message/image" %}
 {% api-method-summary %}
 Send Image Message
 {% endapi-method-summary %}
@@ -100,7 +100,7 @@ const axios = require('axios');
 
 axios
   .post(
-    'https://api.wapim.io/api/v1/whatsapp/message/image',
+    'https://api.wapim.co/api/v1/whatsapp/message/image',
     {
       phone_number: 'RECIPIENT_NUMBER',
       content_url: 'https://i.picsum.photos/id/859/800/600.jpg',
@@ -120,7 +120,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/message/image \
+  -X POST https://api.wapim.co/api/v1/whatsapp/message/image \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"phone_number": "RECIPIENT_NUMBER", "content_url":"https://i.picsum.photos/id/859/800/600.jpg",  "caption" : "Hello from Wapim"}'
 ```

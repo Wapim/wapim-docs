@@ -4,7 +4,7 @@ description: You can send WhatsApp text messages with this endpoint.
 
 # Text
 
-{% api-method method="post" host="https://api.wapim.io/api/v1/whatsapp" path="/message/text" %}
+{% api-method method="post" host="https://api.wapim.co/api/v1/whatsapp" path="/message/text" %}
 {% api-method-summary %}
 Send Text Message
 {% endapi-method-summary %}
@@ -81,7 +81,7 @@ const axios = require('axios');
 
 axios
   .post(
-    'https://api.wapim.io/api/v1/whatsapp/message/text',
+    'https://api.wapim.co/api/v1/whatsapp/message/text',
     {
      phone_number: 'RECIPIENT_NUMBER',
      message: 'Hello Wapim 😍'
@@ -100,7 +100,7 @@ axios
 {% tab title="cURL" %}
 ```bash
 curl \
-  -X POST https://api.wapim.io/api/v1/whatsapp/message/text \
+  -X POST https://api.wapim.co/api/v1/whatsapp/message/text \
   -H "token: YOUR_WAPIM_TOKEN" \
   -d '{"phone_number": "RECIPIENT_NUMBER", "message" : "Hello Wapim"}'
 ```
